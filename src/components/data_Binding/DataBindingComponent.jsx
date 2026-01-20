@@ -1,4 +1,5 @@
 import DataBindingCode from "./DataBindingCode";
+import DataBindingText from "./DataBindingText";
 
 export default function DataBindingComponent(){
     var products = [
@@ -6,10 +7,12 @@ export default function DataBindingComponent(){
         {Name: 'Nike Casuals', Price: 4200.44}
     ];
     return(
-        <div className="container">
-            <DataBindingCode/>
-            <h2>OutPut:</h2>
-            <h3>Products Table</h3>
+        <div className="container row">
+            <div><DataBindingText/></div>
+           <div className="col-6"> <DataBindingCode/></div>
+            <div className="col-6">
+            <h3>OutPut:</h3>
+            <h4>Products Table</h4>
             <table className="table table-hover">
                 <thead>
                     <tr>
@@ -28,6 +31,7 @@ export default function DataBindingComponent(){
                     }
                 </tbody>
             </table>
+            </div>
         </div>
     )
 }

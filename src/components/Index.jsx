@@ -1,7 +1,7 @@
 export default function Index(){
 
 return(
-    <div>
+    <div className="text-center">
        <h1>Welcome to React</h1> 
     </div>
 )

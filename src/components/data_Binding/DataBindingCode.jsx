@@ -1,9 +1,4 @@
 export default function DataBindingCode() {
-    const text=`Data Binding is technique that defines how data is binded to UI[View]
-    -React can handle data binding by using binding expression and simple collection methods.
-    -React data Binding Expression 
-    "{ }".
-    `
     const code = `
 export default function DataBindingComponent(){
     var products = [
@@ -38,10 +33,6 @@ export default function DataBindingComponent(){
 
     return (
         <div className="container mt-3">
-            <h3>Data Binding Component Notes</h3>
-            <pre>
-                <code>{text}</code>
-            </pre>
             <h3>Data Binding Component Code</h3>
             <pre>
                 <code>{code}</code>
