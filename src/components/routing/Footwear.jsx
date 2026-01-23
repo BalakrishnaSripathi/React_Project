@@ -1,0 +1,8 @@
+export default function Footwear(){
+
+    return(
+        <div>
+            <h2>FootWear Home</h2>
+        </div>
+    )
+}
