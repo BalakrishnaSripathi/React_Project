@@ -7,10 +7,11 @@ export default function ShoppingIndex(){
 
     return(
         <div className="container-fluid">
-              <BrowserRouter>
+              
             <h2>Shopping Index</h2>
              <a href="/fashion">Fashion</a><br></br>
               <a href="/footwear">Footwear</a><br/>
+              <BrowserRouter>
               <Link to="/ele">Electronics</Link>
              
             <Routes>

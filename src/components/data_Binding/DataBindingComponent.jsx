@@ -9,7 +9,6 @@ export default function DataBindingComponent(){
     return(
         <div className="container row">
             <div><DataBindingText/></div>
-           <div className="col-6"> <DataBindingCode/></div>
             <div className="col-6">
             <h3>OutPut:</h3>
             <h4>Products Table</h4>
