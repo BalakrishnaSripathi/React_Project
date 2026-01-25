@@ -18,7 +18,7 @@ export default function ReducerDemo(){
     const [product,setProduct]=useState({});
 
     useEffect(()=>{
-        fetch("http://fakestoreapi.com/products/2")
+        fetch("https://fakestoreapi.com/products/2")
         .then(response=>response.json())
         .then(data=>{
             console.log(data)

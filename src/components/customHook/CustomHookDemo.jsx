@@ -1,7 +1,7 @@
 import { useFectchData } from "./useFetchData"
 
 export default function CustomHookDemo(){
-    const {data}=useFectchData("http://fakestoreapi.com/products")
+    const {data}=useFectchData("https://fakestoreapi.com/products")
 
 return(
     <div className="container-fluid row">
