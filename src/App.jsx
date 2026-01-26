@@ -29,6 +29,8 @@ import Component from './components/component/Component'
 import ComponentCode from './components/component/ComponentCode'
 import ClassComponentCode from './components/component/ClassComponentCode'
 import ClassComponent from './components/component/ClassComponent'
+import PropsCode from './components/props/PropsCode'
+import ParentComponent from './components/props/PropsComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -60,6 +62,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <ClassComponent/>
+                </div>
+            </div> }/>
+
+            <Route path='/Props' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <PropsCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <ParentComponent/>
                 </div>
             </div> }/>
             

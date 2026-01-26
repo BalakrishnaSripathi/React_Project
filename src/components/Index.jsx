@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Index() {
     return (
         <div className="container mt-4">
@@ -12,40 +14,43 @@ export default function Index() {
                     <ol className="list-group list-group-flush">
                     
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/Component">Functional Component</a>
+                            <Link className="text-decoration-none" to="/Component">Functional Component</Link>
                         </li>
                          <li className="list-group-item">
-                            <a className="text-decoration-none" href="/ClassComponent">Class Component</a>
+                            <Link className="text-decoration-none" to="/ClassComponent">Class Component</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/DataBinding">Data Binding</a>
+                            <Link className="text-decoration-none" to="/Props">Props</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/CustomHook">Custom Hook</a>
+                            <Link className="text-decoration-none" to="/DataBinding">Data Binding</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/Routing">Routing</a>
+                            <Link className="text-decoration-none" to="/CustomHook">Custom Hook</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/Server">Creating API (GET & POST)</a>
+                            <Link className="text-decoration-none" to="/Routing">Routing</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/UseReducer">useReducer</a>
+                            <Link className="text-decoration-none" to="/Server">Creating API (GET & POST)</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/FormComponent">Form Component</a>
+                            <Link className="text-decoration-none" to="/UseReducer">useReducer</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/Yup">Yup Validation</a>
+                            <Link className="text-decoration-none" to="/FormComponent">Form Component</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/ReactHook">useState & useEffect</a>
+                            <Link className="text-decoration-none" to="/Yup">Yup Validation</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/Cookies">Cookies</a>
+                            <Link className="text-decoration-none" to="/ReactHook">useState & useEffect</Link>
                         </li>
                         <li className="list-group-item">
-                            <a className="text-decoration-none" href="/Axios">Axios</a>
+                            <Link className="text-decoration-none" to="/Cookies">Cookies</Link>
+                        </li>
+                        <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/Axios">Axios</Link>
                         </li>
                     </ol>
                 </div>
