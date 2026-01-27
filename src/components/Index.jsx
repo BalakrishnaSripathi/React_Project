@@ -11,7 +11,7 @@ export default function Index() {
 
             <div className="card shadow">
                 <div className="card-body">
-                    <ol className="list-group list-group-flush">
+                    <ul className="list-group list-group-flush">
                     
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Component">Functional Component</Link>
@@ -27,6 +27,9 @@ export default function Index() {
                         </li>
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/CustomHook">Custom Hook</Link>
+                        </li>
+                        <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/ContextHook">useContext Hook</Link>
                         </li>
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Routing">Routing</Link>
@@ -52,7 +55,7 @@ export default function Index() {
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>
                         </li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
 

@@ -31,6 +31,8 @@ import ClassComponentCode from './components/component/ClassComponentCode'
 import ClassComponent from './components/component/ClassComponent'
 import PropsCode from './components/props/PropsCode'
 import ParentComponent from './components/props/PropsComponent'
+import COntextDemoCode from './components/useContext/ContextDemoCode'
+import ContextDemo from './components/useContext/ContextDemo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -113,6 +115,21 @@ function App() {
                 </div>
             </div> }/>
 
+
+            <Route path='/ContextHook' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <COntextDemoCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <ContextDemo/>
+                </div>
+            </div> }/>
+
+            
+
             <Route path='/Routing' element={
             <div className="row">
                 <div className="col-md-6 border">
@@ -123,6 +140,7 @@ function App() {
                     <h5 className="text-center">Output</h5>
                     <ShoppingIndex/>
                   
+
                 </div>
             </div> }>
                             <Route path="footwear" element={<Footwear/>}/>
