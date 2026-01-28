@@ -29,7 +29,13 @@ export default function Index() {
                             <Link className="text-decoration-none" to="/CustomHook">Custom Hook</Link>
                         </li>
                         <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/ReactHook">useState & useEffect</Link>
+                        </li>
+                        <li className="list-group-item">
                             <Link className="text-decoration-none" to="/ContextHook">useContext Hook</Link>
+                        </li>
+                        <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/UseReducer">useReducer</Link>
                         </li>
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Routing">Routing</Link>
@@ -37,17 +43,12 @@ export default function Index() {
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Server">Creating API (GET & POST)</Link>
                         </li>
-                        <li className="list-group-item">
-                            <Link className="text-decoration-none" to="/UseReducer">useReducer</Link>
-                        </li>
+                        
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/FormComponent">Form Component</Link>
                         </li>
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Yup">Yup Validation</Link>
-                        </li>
-                        <li className="list-group-item">
-                            <Link className="text-decoration-none" to="/ReactHook">useState & useEffect</Link>
                         </li>
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Cookies">Cookies</Link>
