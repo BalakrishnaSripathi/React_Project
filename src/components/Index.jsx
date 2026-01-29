@@ -38,6 +38,9 @@ export default function Index() {
                             <Link className="text-decoration-none" to="/UseReducer">useReducer</Link>
                         </li>
                         <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/ConditionalRendering">Conditional Rendering</Link>
+                        </li>
+                        <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Routing">Routing</Link>
                         </li>
                         <li className="list-group-item">

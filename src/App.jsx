@@ -33,6 +33,8 @@ import PropsCode from './components/props/PropsCode'
 import ParentComponent from './components/props/PropsComponent'
 import COntextDemoCode from './components/useContext/ContextDemoCode'
 import ContextDemo from './components/useContext/ContextDemo'
+import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering'
+import ConditionalRenderingCode from './components/ConditionalRendering/ConditionalRenderingCode'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -100,6 +102,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <AxiosDemo/>
+                </div>
+            </div> }/>
+
+            <Route path='/ConditionalRendering' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ConditionalRenderingCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <ConditionalRendering/>
                 </div>
             </div> }/>
 
