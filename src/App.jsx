@@ -35,6 +35,8 @@ import COntextDemoCode from './components/useContext/ContextDemoCode'
 import ContextDemo from './components/useContext/ContextDemo'
 import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering'
 import ConditionalRenderingCode from './components/ConditionalRendering/ConditionalRenderingCode'
+import UseRefHookCode from './components/useRef/UseRefHookCode'
+import UseRefHook from './components/useRef/UseRefHook'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -139,6 +141,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <ContextDemo/>
+                </div>
+            </div> }/>
+
+            <Route path='/UseRef' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseRefHookCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseRefHook/>
                 </div>
             </div> }/>
 
