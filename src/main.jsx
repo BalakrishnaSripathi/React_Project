@@ -8,12 +8,13 @@ import { BrowserRouter } from 'react-router-dom';
 import Index from './components/Index.jsx';
 import UserLogin from './components/UserLogin.jsx';
 import { CookiesProvider } from 'react-cookie';
+import TailwindDemo from './components/tailwindCss/TailwindDemo.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   
   <CookiesProvider>
-    <App />
+    <TailwindDemo />
   </CookiesProvider>
   </BrowserRouter>,
 )

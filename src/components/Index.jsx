@@ -11,7 +11,7 @@ export default function Index() {
 
             <div className="card shadow">
                 <div className="card-body">
-                    <ul className="list-group list-group-flush">
+                    <ul className="list-group list-group-flushnpm ">
                     
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Component">Functional Component</Link>
