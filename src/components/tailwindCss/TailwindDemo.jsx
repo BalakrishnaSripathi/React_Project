@@ -1,12 +1,10 @@
-import "./tailwind.css"
-
 export default function TailwindDemo(){
     
     return(
         <div>
             <div className="flex bg-pink-500 items-center justify-between px-20 py-10" >
                 <h2 className="text-xl font-bold">DMANTZ Technologies</h2>
-                <div className="flex gap-10">
+                <div className="flex gap-4">
                     <h4 className="text-xl text-white font-bold">Home</h4>
                     <h4 className="text-xl text-white font-bold">About</h4>
                     <h4 className="text-xl text-white font-bold">Contact</h4>
