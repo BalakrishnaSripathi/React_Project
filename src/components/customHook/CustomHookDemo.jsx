@@ -8,11 +8,9 @@ return(
         <h2>products</h2>
             {
                 data.map(v=>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mb-3 " >
-                    <div className="card p-2 " style={{width:"300px"}}>
-                    <img src={v.image}  height="200px" />
-                    {v.title}
-                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12  border-2 border-indigo-400" >
+                    <img className="h-60 w-60 object-fill" src={v.image}  height="200px" />
+                    <p className="bg-blue-100 font-bold border-1 border-amber-100">{v.title}</p>
                     </div>
                 )
             }
