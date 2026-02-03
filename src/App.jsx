@@ -37,6 +37,8 @@ import ConditionalRendering from './components/ConditionalRendering/ConditionalR
 import ConditionalRenderingCode from './components/ConditionalRendering/ConditionalRenderingCode'
 import UseRefHookCode from './components/useRef/UseRefHookCode'
 import UseRefHook from './components/useRef/UseRefHook'
+import TailwindCode from './components/tailwindCss/TailwindCode'
+import TailwindDemo from './components/tailwindCss/TailwindDemo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -250,6 +252,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UserLog/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/Tailwind' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <TailwindCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <TailwindDemo/>
                 </div>
             </div> }/>
 

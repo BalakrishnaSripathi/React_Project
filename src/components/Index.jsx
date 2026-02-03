@@ -59,6 +59,9 @@ export default function Index() {
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Cookies">Cookies</Link>
                         </li>
+                         <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/Tailwind">Tailwind</Link>
+                        </li>
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>
                         </li>
