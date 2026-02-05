@@ -3,6 +3,8 @@ import IShopHome from "./IShopHome";
 import IshopLogin from "./IshopLogin";
 import IshopRegister from "./IshopRegister";
 import IShopDashboard from "./IShopDashboard";
+import IshopProducts from "./IshopProducts";
+import IshopProductDetails from "./IshopProductDetails";
 
 export default function IshopIndex(){
     
@@ -34,12 +36,15 @@ export default function IshopIndex(){
                         <Route path="/login" element={<IshopLogin/>}/>
                         <Route path="/register" element={<IshopRegister/>}/>
                         <Route path="/dashboard" element={<IShopDashboard/>}/>
+                        <Route path="/products/:category"  element={<IshopProducts/>}/>
+                        <Route path="details/:id" element={<IshopProductDetails/>}/>
                         <Route path="/errorpage" element={
                             <div>
                                 <h2>Invalid Creadentials</h2>
                                 <Link to="/login">Try Again</Link>
                             </div>
                         }/>
+                    
                     </Routes>
 
                 </main>

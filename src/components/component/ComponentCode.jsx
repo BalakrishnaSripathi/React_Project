@@ -1,3 +1,6 @@
+import Component from "./Component";
+import DemoCom from "./DemoCom";
+
 export default function ComponentCode() {
     const code = `
 export default function(){
@@ -15,6 +18,7 @@ export default function(){
             <pre>
                 <code>{code}</code>
             </pre>
+            <DemoCom component={<Component/>}/>
         </div>
     );
 }

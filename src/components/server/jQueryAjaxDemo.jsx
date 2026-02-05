@@ -41,7 +41,6 @@ export default function JQueryAjaxDemo(){
 
     return(
         <div className="container-fluid">
-
             <h2>Register User</h2>
             <form onSubmit={formik.handleSubmit}>
                 <dl>

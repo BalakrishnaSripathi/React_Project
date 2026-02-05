@@ -48,6 +48,32 @@ app.post("/registeruser", async (req, res) => {
     }
 });
 
+app.get("/getproducts", async (req, res) => {
+    const data = await db.collection("tblproducts").find({}).toArray();
+    res.json(data);
+});
+
+app.get("/getcategories", async (req, res) => {
+    const data = await db.collection("tblcategories").find({}).toArray();
+    res.json(data);
+});
+
+
+app.get("/getproduct/:id", async (req, res) => {
+    try {
+        const products = await db
+            .collection("tblproducts")
+            .find({ id: parseInt(req.params.id) })
+            .toArray();
+
+        res.json(products);
+    } catch (err) {
+        res.status(500).send("Server Error");
+    }
+});
+
+
+
 // LISTEN ONCE
 app.listen(4000, () => {
     console.log("Server running at http://127.0.0.1:4000");
