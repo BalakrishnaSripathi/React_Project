@@ -28,6 +28,7 @@ const IshopProducts = () => {
             )
         }
       </ol>
+      
       <div>
         <Link to="/dashboard">back to categories</Link>
       </div>

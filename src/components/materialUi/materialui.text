@@ -1,0 +1,50 @@
+Material UI
+
+-it a component library for react
+-it is built for react and hance it is native for react
+- it provides predefined components like
+        button
+        accordion
+        sliders
+        dialogs
+        grids etc..
+-React 17> version are using "emotion" styling engine for MUI.
+
+setip Material UI for React Project:
+-----------------------------------
+-install following tools in your Project
+
+>npm intall @mui/Material
+>npm install @emotion/react
+>npm install @emotion/styled
+
+Browser engine 
+   DOM
+styling engine
+   CSSOM
+                (or)
+>npm install @mui/material@emotion/react@emotion/styled --save
+
+
+Material Icons:
+> npm install @mui/icons-material
+
+
+        Setup MUI components in React APP
+step-1: Import the library for component
+
+    import {Button} from '@mui/meterial/button'
+
+step-2:Every component have a selector and properties
+    <Button props={}></Button>
+
+Note: To learn any new component you have explore the API
+
+
+1.get the details about library required to import
+
+
+import Button from '@mui/material/Button';
+// or
+import { Button } from '@mui/material';
+

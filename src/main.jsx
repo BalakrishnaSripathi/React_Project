@@ -8,7 +8,8 @@ import Index from './components/Index.jsx';
 import UserLogin from './components/UserLogin.jsx';
 import { CookiesProvider } from 'react-cookie';
 import TailwindDemo from './components/tailwindCss/TailwindDemo.jsx';
-import IshopIndex from './components/iShop/IShopIndex.jsx';
+import AllMUIConcepts from './components/materialUi/MaterialUiComponent.jsx';
+
 
 
 
@@ -16,7 +17,7 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   
   <CookiesProvider>
-    <IshopIndex/>
+    <AllMUIConcepts/>
   </CookiesProvider>
   </BrowserRouter>,
 )
