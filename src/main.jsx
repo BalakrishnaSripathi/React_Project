@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   
   <CookiesProvider>
-    <AllMUIConcepts/>
+    <App/>
   </CookiesProvider>
   </BrowserRouter>,
 )
