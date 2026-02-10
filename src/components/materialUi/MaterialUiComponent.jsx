@@ -1,20 +1,25 @@
 import { useState } from "react";
 import {
+  Alert,
   Button,
   TextField,
   Stack,
   Typography,
   IconButton,
   Card,
-  CardContent
+  CardContent,
+  InputAdornment
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import DeleteIcon from "@mui/icons-material/Delete";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import LockIcon from "@mui/icons-material/Lock";
 
 export default function MaterialUiComponent() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [users, setUsers] = useState([]);
+
 
   const handleSubmit = () => {
     if (!name || !password) return;
@@ -24,33 +29,54 @@ export default function MaterialUiComponent() {
     setPassword("");
   };
 
-  
   const handleDelete = (index) => {
-    const filtered = users.filter((_, i) => i !== index);
-    setUsers(filtered);
+    setUsers(users.filter((_, i) => i !== index));
   };
 
   return (
     <div style={{ padding: 20 }}>
       <Stack spacing={2} width={300}>
+        
+        {/* Name with Icon */}
         <TextField
+        placeholder="Enter Your Name"
           label="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          variant="standard"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <AccountCircle />
+              </InputAdornment>
+            ),
+          }}
         />
 
+        {/* Password with Icon */}
         <TextField
+        placeholder="Password"
           label="Password"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          variant="standard"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <LockIcon />
+              </InputAdornment>
+            ),
+          }}
         />
-
         <Button
           variant="contained"
           endIcon={<SendIcon />}
           onClick={handleSubmit}
+        
         >
+          
+          
           Submit
         </Button>
       </Stack>
@@ -63,10 +89,10 @@ export default function MaterialUiComponent() {
         {users.map((user, index) => (
           <Card key={index}>
             <CardContent
-              style={{
+              sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
               <div>
@@ -74,10 +100,7 @@ export default function MaterialUiComponent() {
                 <Typography>Password: {user.password}</Typography>
               </div>
 
-              <IconButton
-                color="error"
-                onClick={() => handleDelete(index)}
-              >
+              <IconButton color="error" onClick={() => handleDelete(index)}>
                 <DeleteIcon />
               </IconButton>
             </CardContent>

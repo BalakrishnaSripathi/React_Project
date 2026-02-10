@@ -1,0 +1,18 @@
+State Management:
+------------------
+-Web application Usese Http as Protocol
+-It works with the machanism
+        "Go-Get-Forget"
+
+
+        Redux
+        -----
+-it is a state container for JavaScript Apps.
+-it is used in react,angular,vue,ember etc..
+-it is a centralized store for application state.
+-It allows to access and use data from any component.
+-it is application level.
+-A Predictable state container allows to manage your 
+data from application start to application end.
+-it is across all components within the scope of application
+

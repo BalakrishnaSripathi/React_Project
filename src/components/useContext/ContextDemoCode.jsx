@@ -1,5 +1,8 @@
 export default function COntextDemoCode() {
     const code = `
+-Context is memory allocated for component
+-It is made available for component run within the context of parent.
+
 import React, {useContext, useState} from "react"
 
 var userDetailsContext = React.createContext(null);

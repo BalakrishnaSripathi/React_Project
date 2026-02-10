@@ -3,6 +3,7 @@ import FiberNewIcon from '@mui/icons-material/FiberNew';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import { useEffect, useState } from "react";
+import ArrowDownwardSharpIcon from '@mui/icons-material/ArrowDownwardSharp';
 
 export default function Index() {
     const [show,setShow]=useState(false);
@@ -14,11 +15,29 @@ export default function Index() {
     return (
 
         <div className="container mt-4">
-            {show && (<Stack sx={{ width: '100%' }} spacing={2}>
-      <Alert className="animate-bounce" variant="filled" severity="success">
-        Today I learn Material UI
-      </Alert>
-      </Stack>)}
+
+    {show && (
+    <Stack
+    direction="row"
+    alignItems="center"
+    spacing={2}
+    sx={{ width: "100%" }}
+    >
+    <Alert
+      className="animate-bounce flex-1"
+      variant="filled"
+      severity="success"
+    >
+      Today I learned Material UI
+    </Alert>
+
+    <ArrowDownwardSharpIcon
+      className="animate-bounce bg-green-600 text-white rounded-2xl p-1"
+      fontSize="large"
+    />
+    </Stack>
+        )}
+
             
             <div className="text-center mb-4">
                 <h1 className="fw-bold">Welcome to React</h1>
@@ -78,7 +97,7 @@ export default function Index() {
                          <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Tailwind">Tailwind</Link>
                         </li>
-                        <li className="list-group-item "><FiberNewIcon/>
+                        <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/MaterialUi">Material UI</Link>
                         </li>
                         <li className="list-group-item ">
