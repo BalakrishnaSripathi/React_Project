@@ -28,7 +28,7 @@ export default function Index() {
       variant="filled"
       severity="success"
     >
-      Today I learned Material UI
+      Today I learned Redux
     </Alert>
 
     <ArrowDownwardSharpIcon
@@ -97,8 +97,11 @@ export default function Index() {
                          <li className="list-group-item">
                             <Link className="text-decoration-none" to="/Tailwind">Tailwind</Link>
                         </li>
+                        <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/MaterialUi">Material UI</Link>
+                        </li>
                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/MaterialUi">Material UI</Link>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/Redux">Redux</Link>
                         </li>
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>

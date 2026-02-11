@@ -41,6 +41,8 @@ import TailwindCode from './components/tailwindCss/TailwindCode'
 import TailwindDemo from './components/tailwindCss/TailwindDemo'
 import MaterialUiCode from './components/materialUi/MaterialUiCode'
 import MaterialUiComponent from './components/materialUi/MaterialUiComponent'
+import ReduxStoreCode from './components/reduxStore/ReduxStoreCode'
+import ReduxApp from './components/reduxStore/ReduxApp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -279,6 +281,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <MaterialUiComponent/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/Redux' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ReduxStoreCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <ReduxApp/>
                 </div>
             </div> }/>
 
