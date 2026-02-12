@@ -28,7 +28,7 @@ export default function Index() {
       variant="filled"
       severity="success"
     >
-      Today I learned useMemo Hook
+      Today I learned useMemo and useCallback Hook
     </Alert>
 
     <ArrowDownwardSharpIcon
@@ -105,6 +105,9 @@ export default function Index() {
                         </li>
                          <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/UseMemo">useMemo</Link>
+                        </li>
+                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseCallBack">useCallback</Link>
                         </li>
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>

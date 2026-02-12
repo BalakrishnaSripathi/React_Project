@@ -1,3 +1,6 @@
+export default function UseCallbackCode() {
+    const code = `
+
 import React, { useCallback, useState } from 'react'
 import Button from './Button';
 import { increment } from '../reduxStore/slices/ReduxCounterSlice';
@@ -31,3 +34,30 @@ const UseCallbackComponent = () => {
 }
 
 export default UseCallbackComponent
+
+
+Button.jsx
+----------
+import React from 'react'
+
+const Button =React.memo( ({Increment}) => {
+    console.log("Chaild component render")
+  return (
+    <button onClick={Increment}>CLICK ME</button>
+  )
+})
+
+export default Button
+
+
+`;
+
+    return (
+        <div className="container mt-3">
+            <h3> Code</h3>
+            <pre>
+                <code>{code}</code>
+            </pre>
+        </div>
+    );
+}

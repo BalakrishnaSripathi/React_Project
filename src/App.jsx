@@ -45,6 +45,8 @@ import ReduxStoreCode from './components/reduxStore/ReduxStoreCode'
 import ReduxApp from './components/reduxStore/ReduxApp'
 import UseMemoCode from './components/useMemo/UseMemoCode'
 import UseMemoComponent from './components/useMemo/UseMemoComponent'
+import UseCallbackCode from './components/useCallback.jsx/UseCallbackCode'
+import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -309,6 +311,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseMemoComponent/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/UseCallBack' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseCallbackCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseCallbackComponent/>
                 </div>
             </div> }/>
 

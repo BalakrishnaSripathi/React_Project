@@ -22,7 +22,7 @@ createRoot(document.getElementById('root')).render(
   <CookiesProvider>
   
     <Provider store={Store}>
-      <UseCallbackComponent/>
+      <App/>
     </Provider>
   </CookiesProvider>
   
