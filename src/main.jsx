@@ -12,6 +12,7 @@ import Store from './components/reduxStore/Store.js';
 import { Provider } from 'react-redux';
 import ReduxApp from './components/reduxStore/ReduxApp.jsx';
 import UseMemoComponent from './components/useMemo/UseMemoComponent.jsx';
+import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent.jsx';
 
 
 
@@ -21,7 +22,7 @@ createRoot(document.getElementById('root')).render(
   <CookiesProvider>
   
     <Provider store={Store}>
-      <App/>
+      <UseCallbackComponent/>
     </Provider>
   </CookiesProvider>
   
