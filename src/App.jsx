@@ -43,6 +43,8 @@ import MaterialUiCode from './components/materialUi/MaterialUiCode'
 import MaterialUiComponent from './components/materialUi/MaterialUiComponent'
 import ReduxStoreCode from './components/reduxStore/ReduxStoreCode'
 import ReduxApp from './components/reduxStore/ReduxApp'
+import UseMemoCode from './components/useMemo/UseMemoCode'
+import UseMemoComponent from './components/useMemo/UseMemoComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -294,6 +296,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <ReduxApp/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/UseMemo' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseMemoCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseMemoComponent/>
                 </div>
             </div> }/>
 

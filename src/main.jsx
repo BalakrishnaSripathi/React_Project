@@ -10,8 +10,8 @@ import TailwindDemo from './components/tailwindCss/TailwindDemo.jsx';
 import AllMUIConcepts from './components/materialUi/MaterialUiComponent.jsx';
 import Store from './components/reduxStore/Store.js';
 import { Provider } from 'react-redux';
-
 import ReduxApp from './components/reduxStore/ReduxApp.jsx';
+import UseMemoComponent from './components/useMemo/UseMemoComponent.jsx';
 
 
 
