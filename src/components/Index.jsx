@@ -103,11 +103,14 @@ export default function Index() {
                         <li className="list-group-item ">
                             <Link className=" text-decoration-none " to="/Redux">Redux</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseMemo">useMemo</Link>
+                         <li className="list-group-item ">
+                            <Link className=" text-decoration-none  " to="/UseMemo">useMemo</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseCallBack">useCallback</Link>
+                         <li className="list-group-item ">
+                            <Link className="text-decoration-none " to="/UseCallBack">useCallback</Link>
+                        </li>
+                        <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/Hoc">Hoc</Link>
                         </li>
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>

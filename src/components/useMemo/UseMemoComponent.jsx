@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export default function UseMemoComponent(){
     const [count,setCount]=useState(0);
-    const[number,setNumber]=useState(5);
+    const[number,setNumber]=useState(1);
     const factorial=useMemo(()=>fact(number),[number])
 
     function setNumber1(e){

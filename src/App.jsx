@@ -47,6 +47,8 @@ import UseMemoCode from './components/useMemo/UseMemoCode'
 import UseMemoComponent from './components/useMemo/UseMemoComponent'
 import UseCallbackCode from './components/useCallback.jsx/UseCallbackCode'
 import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent'
+import HocCode from './components/hoc/HocCode'
+import AuthDashboard from './components/hoc/Dashboard.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -324,6 +326,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseCallbackComponent/>
+                </div>
+            </div> }/>
+
+            <Route path='/Hoc' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <HocCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <AuthDashboard/>
                 </div>
             </div> }/>
 
