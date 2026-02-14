@@ -14,6 +14,7 @@ import ReduxApp from './components/reduxStore/ReduxApp.jsx';
 import UseMemoComponent from './components/useMemo/UseMemoComponent.jsx';
 import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent.jsx';
 import AuthDashboard from './components/hoc/Dashboard.jsx';
+import Home from './components/contextAPI/Home.jsx';
 
 
 

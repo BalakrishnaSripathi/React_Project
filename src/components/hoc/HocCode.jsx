@@ -1,5 +1,10 @@
 export default function HocCode() {
     const code = `
+A Higher Order Component (HOC) is a function that takes a component as input 
+and returns a new enhanced component. It is mainly used for code reuse, logic 
+sharing, and component enhancement without modifying the original component.
+
+
 component and renders it only if the user is authenticated.
 -------------------------------------------------------------------
 const WithAuth=(Component)=>{
@@ -113,7 +118,7 @@ export default WrappedApp;
 
     return (
         <div className="container mt-3">
-            <h3> Code</h3>
+            <h3>Higher Order Component Code</h3>
             <pre>
                 <code>{code}</code>
             </pre>

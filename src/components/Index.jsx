@@ -104,13 +104,16 @@ export default function Index() {
                             <Link className=" text-decoration-none " to="/Redux">Redux</Link>
                         </li>
                          <li className="list-group-item ">
-                            <Link className=" text-decoration-none  " to="/UseMemo">useMemo</Link>
+                            <Link className=" text-decoration-none" to="/UseMemo">useMemo</Link>
                         </li>
                          <li className="list-group-item ">
-                            <Link className="text-decoration-none " to="/UseCallBack">useCallback</Link>
+                            <Link className="text-decoration-none" to="/UseCallBack">useCallback</Link>
+                        </li>
+                        <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/Hoc">Higher Order Component</Link>
                         </li>
                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/Hoc">Hoc</Link>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/CAPI">Context API</Link>
                         </li>
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>

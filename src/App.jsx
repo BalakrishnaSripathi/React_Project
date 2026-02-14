@@ -49,6 +49,8 @@ import UseCallbackCode from './components/useCallback.jsx/UseCallbackCode'
 import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent'
 import HocCode from './components/hoc/HocCode'
 import AuthDashboard from './components/hoc/Dashboard.jsx';
+import ContextAPICode from './components/contextAPI/ContexAPICode.jsx'
+import Home from './components/contextAPI/Home.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -341,6 +343,18 @@ function App() {
                 </div>
             </div> }/>
 
+
+            <Route path='/CAPI' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ContextAPICode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <Home/>
+                </div>
+            </div> }/>
 
 
 
