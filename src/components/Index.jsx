@@ -118,6 +118,9 @@ export default function Index() {
                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/UseLayout">useLayoutEffect</Link>
                         </li>
+                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseLayout">useDebugValue</Link>
+                        </li>
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>
                         </li>

@@ -17,6 +17,7 @@ import AuthDashboard from './components/hoc/Dashboard.jsx';
 import Home from './components/contextAPI/Home.jsx';
 import OtpComponent from './components/otp/OtpComponent.jsx';
 import UseLayout from './components/useLayoutEffect/UseLayout.jsx';
+import UseDebugValue from './components/useDebugValue/UseDebugValue.jsx';
 
 
 

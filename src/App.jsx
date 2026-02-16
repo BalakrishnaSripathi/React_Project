@@ -53,6 +53,8 @@ import ContextAPICode from './components/contextAPI/ContexAPICode.jsx'
 import Home from './components/contextAPI/Home.jsx'
 import UseLayoutCode from './components/useLayoutEffect/UseLayoutCode.jsx'
 import UseLayout from './components/useLayoutEffect/UseLayout.jsx'
+import UseDebugCode from './components/useDebugValue/UseDebugCode.jsx'
+import UseDebugValue from './components/useDebugValue/UseDebugValue.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -368,6 +370,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseLayout/>
+                </div>
+            </div> }/>
+
+            <Route path='/UseDebug' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseDebugCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseDebugValue/>
                 </div>
             </div> }/>
 
