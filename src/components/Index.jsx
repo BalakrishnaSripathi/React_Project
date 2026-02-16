@@ -112,8 +112,11 @@ export default function Index() {
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Hoc">Higher Order Component</Link>
                         </li>
+                        <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/CAPI">Context API</Link>
+                        </li>
                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/CAPI">Context API</Link>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseLayout">useLayoutEffect</Link>
                         </li>
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>

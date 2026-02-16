@@ -15,6 +15,8 @@ import UseMemoComponent from './components/useMemo/UseMemoComponent.jsx';
 import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent.jsx';
 import AuthDashboard from './components/hoc/Dashboard.jsx';
 import Home from './components/contextAPI/Home.jsx';
+import OtpComponent from './components/otp/OtpComponent.jsx';
+import UseLayout from './components/useLayoutEffect/UseLayout.jsx';
 
 
 

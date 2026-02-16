@@ -51,6 +51,8 @@ import HocCode from './components/hoc/HocCode'
 import AuthDashboard from './components/hoc/Dashboard.jsx';
 import ContextAPICode from './components/contextAPI/ContexAPICode.jsx'
 import Home from './components/contextAPI/Home.jsx'
+import UseLayoutCode from './components/useLayoutEffect/UseLayoutCode.jsx'
+import UseLayout from './components/useLayoutEffect/UseLayout.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -353,6 +355,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <Home/>
+                </div>
+            </div> }/>
+
+
+             <Route path='/UseLayout' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseLayoutCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseLayout/>
                 </div>
             </div> }/>
 
