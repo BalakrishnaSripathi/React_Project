@@ -55,6 +55,8 @@ import UseLayoutCode from './components/useLayoutEffect/UseLayoutCode.jsx'
 import UseLayout from './components/useLayoutEffect/UseLayout.jsx'
 import UseDebugCode from './components/useDebugValue/UseDebugCode.jsx'
 import UseDebugValue from './components/useDebugValue/UseDebugValue.jsx'
+import UseTransitionCode from './components/useTransitionHook/UseTransitionCode.jsx'
+import UseTransitionHook from './components/useTransitionHook/UseTransitionHook.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -382,6 +384,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseDebugValue/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/UseTransition' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseTransitionCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseTransitionHook/>
                 </div>
             </div> }/>
 
