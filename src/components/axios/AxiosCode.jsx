@@ -1,5 +1,21 @@
 export default function AxiosCode() {
     const code = `
+axios:
+-----
+A promise-based HTTP client for the browser and Node.js.
+Used to send HTTP requests (GET, POST, PUT, DELETE, etc.).
+Works well with APIs in both frontend and backend.
+Automatically transforms JSON data
+
+Use Axios:
+----------
+->Simpler syntax than fetch()
+->Automatic JSON conversion
+->Easy to handle errors
+->Works in both frontend (React) and backend (Node.js)
+->Supports interceptors and request cancellation
+
+
 import axios from "axios";
 import { useEffect, useState } from "react"
 

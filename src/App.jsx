@@ -57,6 +57,8 @@ import UseDebugCode from './components/useDebugValue/UseDebugCode.jsx'
 import UseDebugValue from './components/useDebugValue/UseDebugValue.jsx'
 import UseTransitionCode from './components/useTransitionHook/UseTransitionCode.jsx'
 import UseTransitionHook from './components/useTransitionHook/UseTransitionHook.jsx'
+import CurdCode from './components/crud/curdCode.jsx'
+import UserPage from './components/crud/pages/UserPage.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -397,6 +399,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseTransitionHook/>
+                </div>
+            </div> }/>
+
+            
+            <Route path='/Crud' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <CurdCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UserPage/>
                 </div>
             </div> }/>
 
