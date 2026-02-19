@@ -61,6 +61,8 @@ import CurdCode from './components/crud/curdCode.jsx'
 import UserPage from './components/crud/pages/UserPage.jsx'
 import UseImaperativeHookCode from './components/useImperativeHandleHook/UseImaperativeHookCode.jsx'
 import UseImperativeHandleHook from './components/useImperativeHandleHook/UseImperativeHandleHook.jsx'
+import UseIdHookCode from './components/useIdHook/UseIdHookCode.jsx'
+import UseIdHook from './components/useIdHook/UseIdHook.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -426,6 +428,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseImperativeHandleHook/>
+                </div>
+            </div> }/>
+
+            <Route path='/UseId' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseIdHookCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseIdHook/>
                 </div>
             </div> }/>
 
