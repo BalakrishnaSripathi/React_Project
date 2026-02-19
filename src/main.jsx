@@ -21,6 +21,7 @@ import UseDebugValue from './components/useDebugValue/UseDebugValue.jsx';
 import UseTransitionHook from './components/useTransitionHook/UseTransitionHook.jsx';
 import AxiosDemo2 from './components/axios/AxiosDemo2.jsx';
 import UserPage from './components/crud/pages/UserPage.jsx';
+import UseImperativeHandleHook from './components/useImperativeHandleHook/UseImperativeHandleHook.jsx';
 
 
 

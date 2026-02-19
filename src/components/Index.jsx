@@ -118,17 +118,20 @@ export default function Index() {
                         <li className="list-group-item ">
                             <Link className=" text-decoration-none " to="/UseLayout">useLayoutEffect</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseLayout">useDebugValue</Link>
+                         <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/UseDebug">useDebugValue</Link>
                         </li>
-                        <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseTransition">useTransition Hook</Link>
+                        <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/UseTransition">useTransition Hook</Link>
+                        </li>
+                        <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/Axios">Axios</Link>
                         </li>
                          <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/Crud">Axios with CRUD Operations</Link>
                         </li>
-                        <li className="list-group-item ">
-                            <Link className="text-decoration-none" to="/Axios">Axios</Link>
+                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseImperativeHandleHook">UseImperativeHandleHook</Link>
                         </li>
                     </ul>
                 </div>

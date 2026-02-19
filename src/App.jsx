@@ -59,6 +59,8 @@ import UseTransitionCode from './components/useTransitionHook/UseTransitionCode.
 import UseTransitionHook from './components/useTransitionHook/UseTransitionHook.jsx'
 import CurdCode from './components/crud/curdCode.jsx'
 import UserPage from './components/crud/pages/UserPage.jsx'
+import UseImaperativeHookCode from './components/useImperativeHandleHook/UseImaperativeHookCode.jsx'
+import UseImperativeHandleHook from './components/useImperativeHandleHook/UseImperativeHandleHook.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -412,6 +414,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UserPage/>
+                </div>
+            </div> }/>
+
+            <Route path='/UseImperativeHandleHook' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseImaperativeHookCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseImperativeHandleHook/>
                 </div>
             </div> }/>
 
