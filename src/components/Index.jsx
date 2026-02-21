@@ -28,7 +28,7 @@ export default function Index() {
       variant="filled"
       severity="success"
     >
-      Today I learned useTransition Hook
+      Today I learned useId Hook
     </Alert>
 
     <ArrowDownwardSharpIcon
@@ -127,14 +127,14 @@ export default function Index() {
                         <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/Axios">Axios</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/Crud">Axios with CRUD Operations</Link>
+                         <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/Crud">Axios with CRUD Operations</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseImperativeHandleHook">UseImperativeHandleHook</Link>
+                         <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/UseImperativeHandleHook">UseImperativeHandleHook</Link>
                         </li>
-                        <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseId">useId Hook</Link>
+                        <li className="list-group-item ">
+                            <Link className="text-text-decoration-none" to="/UseId">useId Hook</Link>
                         </li>
                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/UseSyncExternalStore">useSyncExternalStore Hook</Link>

@@ -23,6 +23,8 @@ import AxiosDemo2 from './components/axios/AxiosDemo2.jsx';
 import UserPage from './components/crud/pages/UserPage.jsx';
 import UseImperativeHandleHook from './components/useImperativeHandleHook/UseImperativeHandleHook.jsx';
 import UseIdHook from './components/useIdHook/UseIdHook.jsx';
+import IshopIndex from './components/iShop/IShopIndex.jsx';
+import IShopCodeCode from './components/iShop/IShopCode.jsx';
 
 
 
@@ -32,7 +34,10 @@ createRoot(document.getElementById('root')).render(
   <CookiesProvider>
   
     <Provider store={Store}>
-      <App/>
+      <div className='flex'>
+        <IShopCodeCode/>
+       <IshopIndex/> 
+      </div>
     </Provider>
   </CookiesProvider>
   
