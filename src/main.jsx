@@ -25,6 +25,7 @@ import UseImperativeHandleHook from './components/useImperativeHandleHook/UseImp
 import UseIdHook from './components/useIdHook/UseIdHook.jsx';
 import IshopIndex from './components/iShop/IShopIndex.jsx';
 import IShopCodeCode from './components/iShop/IShopCode.jsx';
+import RegisterUser from './components/useOptimistic/RegisterUser.jsx';
 
 
 
@@ -34,10 +35,7 @@ createRoot(document.getElementById('root')).render(
   <CookiesProvider>
   
     <Provider store={Store}>
-      <div className='flex'>
-        <IShopCodeCode/>
-       <IshopIndex/> 
-      </div>
+      <RegisterUser/>
     </Provider>
   </CookiesProvider>
   
