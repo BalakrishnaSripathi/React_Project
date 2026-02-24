@@ -65,6 +65,8 @@ import UseIdHookCode from './components/useIdHook/UseIdHookCode.jsx'
 import UseIdHook from './components/useIdHook/UseIdHook.jsx'
 import UseExternalStoreSyncHook from './components/useExternalStoreSyncHook/UseExternalStoreSyncHook.jsx'
 import UseSyncExternalStoreCode from './components/useExternalStoreSyncHook/UseSyncExternalStoreCode.jsx'
+import UseActionStateCode from './components/useActionState/UseActionStateCode.jsx'
+import UseActionState from './components/useActionState/UseActionState.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -454,6 +456,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseExternalStoreSyncHook/>
+                </div>
+            </div> }/> 
+
+             <Route path='/UseActionState' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseActionStateCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseActionState/>
                 </div>
             </div> }/>
 

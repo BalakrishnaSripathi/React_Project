@@ -26,6 +26,7 @@ import UseIdHook from './components/useIdHook/UseIdHook.jsx';
 import IshopIndex from './components/iShop/IShopIndex.jsx';
 import IShopCodeCode from './components/iShop/IShopCode.jsx';
 import RegisterUser from './components/useOptimistic/RegisterUser.jsx';
+import Login from './components/useActionState/UseActionState.jsx';
 
 
 
@@ -35,7 +36,7 @@ createRoot(document.getElementById('root')).render(
   <CookiesProvider>
   
     <Provider store={Store}>
-      <RegisterUser/>
+      <App/>
     </Provider>
   </CookiesProvider>
   
