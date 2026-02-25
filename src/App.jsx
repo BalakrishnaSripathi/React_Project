@@ -67,6 +67,8 @@ import UseExternalStoreSyncHook from './components/useExternalStoreSyncHook/UseE
 import UseSyncExternalStoreCode from './components/useExternalStoreSyncHook/UseSyncExternalStoreCode.jsx'
 import UseActionStateCode from './components/useActionState/UseActionStateCode.jsx'
 import UseActionState from './components/useActionState/UseActionState.jsx'
+import UseInsertionEffect from './components/useInsertionEffect/UseInsertionEffect.jsx'
+import UseInsertionEffectCode from './components/useInsertionEffect/UseInsertionEffectCode.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -468,6 +470,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseActionState/>
+                </div>
+            </div> }/>
+
+            <Route path='/useInsertionEffect' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseInsertionEffectCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseInsertionEffect/>
                 </div>
             </div> }/>
 
