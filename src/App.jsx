@@ -69,6 +69,9 @@ import UseActionStateCode from './components/useActionState/UseActionStateCode.j
 import UseActionState from './components/useActionState/UseActionState.jsx'
 import UseInsertionEffect from './components/useInsertionEffect/UseInsertionEffect.jsx'
 import UseInsertionEffectCode from './components/useInsertionEffect/UseInsertionEffectCode.jsx'
+import UseDeferredValueCode from './components/useDeferredValue/useDeferredvalueCode.jsx'
+import UseDeferredValue from './components/useDeferredValue/UseDeferredValue.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -482,6 +485,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <UseInsertionEffect/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/UsedeferredValue' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UseDeferredValueCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <UseDeferredValue/>
                 </div>
             </div> }/>
 
