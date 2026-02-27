@@ -29,6 +29,7 @@ import RegisterUser from './components/useOptimistic/RegisterUser.jsx';
 import Login from './components/useActionState/UseActionState.jsx';
 import UseInsertionEffect from './components/useInsertionEffect/UseInsertionEffect.jsx';
 import UseDefferedValue from './components/useDeferredValue/UseDeferredValue.jsx';
+import IndexManagingComponent from './components/managingComponentState/IndexManagingComponent.jsx';
 
 
 
@@ -38,7 +39,7 @@ createRoot(document.getElementById('root')).render(
   <CookiesProvider>
   
     <Provider store={Store}>
-      <App/>
+      <IndexManagingComponent/>
     </Provider>
   </CookiesProvider>
   
