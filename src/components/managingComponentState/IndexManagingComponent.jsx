@@ -2,6 +2,7 @@ import React from 'react'
 import ManagingComponent from './ManagingComponent'
 import UpdatingState from './UpdatingState'
 import Arrays from './Arrays'
+import Arrays2 from './Arrays2'
 
 const IndexManagingComponent = () => {
   return (
@@ -22,6 +23,7 @@ const IndexManagingComponent = () => {
         <div className='mt-5'>
             <h1>Upatating array data</h1><hr />
            <Arrays/>
+           <Arrays2/>
         </div>
 
     </div>
