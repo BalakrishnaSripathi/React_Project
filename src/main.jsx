@@ -31,6 +31,7 @@ import UseInsertionEffect from './components/useInsertionEffect/UseInsertionEffe
 import UseDefferedValue from './components/useDeferredValue/UseDeferredValue.jsx';
 import IndexManagingComponent from './components/managingComponentState/IndexManagingComponent.jsx';
 import FormApp from './components/BuildingForms/FormApp.jsx';
+import ExpenseApp from './components/expense-tracker/components/ExpenseApp.jsx';
 
 
 

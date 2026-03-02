@@ -140,13 +140,16 @@ export default function Index() {
                             <Link className="text-decoration-none" to="/UseSyncExternalStore">useSyncExternalStore Hook</Link>
                         </li>
                         <li className="list-group-item ">
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UseActionState">useActionState Hook</Link>
+                            <Link className="text-decoration-none" to="/UseActionState">useActionState Hook</Link>
+                        </li>
+                         <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/useInsertionEffect">useInsertionEffect Hook</Link>
+                        </li>
+                         <li className="list-group-item ">
+                            <Link className="text-decoration-none" to="/UsedeferredValue">useDeferredValue Hook</Link>
                         </li>
                          <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/useInsertionEffect">useInsertionEffect Hook</Link>
-                        </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/UsedeferredValue">useDeferredValue Hook</Link>
+                            <Link className=" animate-pulse text-green-600 font-semibold " to="/Expense">Expense Tracker</Link>
                         </li>
                     </ul>
                 </div>
