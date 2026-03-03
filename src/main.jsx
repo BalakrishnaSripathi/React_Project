@@ -32,6 +32,7 @@ import UseDefferedValue from './components/useDeferredValue/UseDeferredValue.jsx
 import IndexManagingComponent from './components/managingComponentState/IndexManagingComponent.jsx';
 import FormApp from './components/BuildingForms/FormApp.jsx';
 import ExpenseApp from './components/expense-tracker/components/ExpenseApp.jsx';
+import FechApp from './components/connecting-to-the-backend/FechApp.jsx';
 
 
 
@@ -42,7 +43,7 @@ createRoot(document.getElementById('root')).render(
   
     <Provider store={Store}>
       {/* <IndexManagingComponent/> */}
-      <App/>
+      <FechApp/>
     </Provider>
   </CookiesProvider>
   
