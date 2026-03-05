@@ -73,6 +73,8 @@ import UseDeferredValueCode from './components/useDeferredValue/useDeferredvalue
 import UseDeferredValue from './components/useDeferredValue/UseDeferredValue.jsx'
 import ExpenseApp from './components/expense-tracker/components/ExpenseApp.jsx'
 import ExpenseCode from './components/expense-tracker/components/ExpenseCode.jsx'
+import ConnectingBackEndCode from './components/connecting-to-the-backend/ConnectingBackEndCode.jsx'
+import FechApp from './components/connecting-to-the-backend/FechApp.jsx'
 
 
 function App() {
@@ -513,6 +515,18 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <ExpenseApp/>
+                </div>
+            </div> }/>
+
+            <Route path='/BackEnd' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ConnectingBackEndCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <FechApp/>
                 </div>
             </div> }/>
 
