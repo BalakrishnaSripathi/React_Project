@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
     <Provider>
       {/* <Provider store={Store}> */}
       {/* <IndexManagingComponent/> */}
-      <JotaiApp/>
+      <App/>
       {/* </Provider> */}
     </Provider>  
   </CookiesProvider>
