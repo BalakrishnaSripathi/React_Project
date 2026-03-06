@@ -75,6 +75,8 @@ import ExpenseApp from './components/expense-tracker/components/ExpenseApp.jsx'
 import ExpenseCode from './components/expense-tracker/components/ExpenseCode.jsx'
 import ConnectingBackEndCode from './components/connecting-to-the-backend/ConnectingBackEndCode.jsx'
 import FechApp from './components/connecting-to-the-backend/FechApp.jsx'
+import ReactQueryCode from './components/reactQuery/ReactQueryCode.jsx'
+import TodoList from './components/reactQuery/TodoList.jsx'
 
 
 function App() {
@@ -527,6 +529,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <FechApp/>
+                </div>
+            </div> }/>
+
+
+            <Route path='/ReactQuery' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ReactQueryCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <TodoList/>
                 </div>
             </div> }/>
 

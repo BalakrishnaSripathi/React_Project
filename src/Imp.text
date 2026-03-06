@@ -2,3 +2,8 @@ NPM--->Management
 NPX--->Executer
 
 NPM is a package manager used to install, delete, and update Javascript packages on your machine. NPX is a package executer, and it is used to execute javascript packages directly, without installing them.
+
+
+Caching:
+---------
+The process of storing data in a place where it can be accessed more quickly and efficiently in the future.
