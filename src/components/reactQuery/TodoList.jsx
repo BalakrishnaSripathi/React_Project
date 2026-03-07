@@ -1,14 +1,8 @@
-import { useQuery } from "@tanstack/react-query"
-import axios from "axios"
+import UseTodos from "./UseTodos"
 
 function TodoList() {
 
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["todos"],
-    queryFn: () =>
-      axios.get("https://jsonplaceholder.typicode.com/todos")
-           .then(res => res.data)
-  })
+  const { data, isLoading, error } = UseTodos();
 
   if (isLoading) return <p className="text-center text-lg mt-10">Loading...</p>
 
