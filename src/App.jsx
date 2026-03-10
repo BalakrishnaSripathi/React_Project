@@ -77,6 +77,7 @@ import ConnectingBackEndCode from './components/connecting-to-the-backend/Connec
 import FechApp from './components/connecting-to-the-backend/FechApp.jsx'
 import ReactQueryCode from './components/reactQuery/ReactQueryCode.jsx'
 import TodoList from './components/reactQuery/TodoList.jsx'
+import LoginStatus from './components/useReducer/LoginStatus.jsx'
 
 
 function App() {
@@ -239,7 +240,7 @@ function App() {
                 </div>
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
-                    <ReducerDemo/>
+                    <LoginStatus/>
                 </div>
             </div> }/>
 

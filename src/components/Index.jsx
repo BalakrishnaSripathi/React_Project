@@ -69,9 +69,7 @@ export default function Index() {
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/ContextHook">useContext Hook</Link>
                         </li>
-                        <li className="list-group-item">
-                            <Link className="text-decoration-none" to="/UseReducer">useReducer</Link>
-                        </li>
+                        
                         <li className="list-group-item">
                             <Link className="text-decoration-none" to="/UseRef">useRef</Link>
                         </li>
@@ -148,14 +146,17 @@ export default function Index() {
                          <li className="list-group-item ">
                             <Link className="text-decoration-none" to="/UsedeferredValue">useDeferredValue Hook</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
+                         <li className="list-group-item ">
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/Expense">Expense Tracker</Link>
                         </li>
-                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
+                         <li className="list-group-item ">
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/BackEnd">Creating a Generic HTTP Service</Link>
                         </li>
                         <li className="list-group-item "><FiberNewIcon className="text-green-600"/>
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/ReactQuery">React Query</Link>
+                        </li>
+                        <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
+                            <Link className="animate-pulse text-green-600 font-semibold" to="/UseReducer">useReducer</Link>
                         </li>
                     </ul>
                 </div>

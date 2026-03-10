@@ -12,6 +12,7 @@ import TodoList from './components/reactQuery/TodoList.jsx';
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import PostList from './components/reactQuery/PostList.jsx';
 import TodoApp from './components/reactQuery/TodoApp.jsx';
+import Counter from './components/reducer/Counter.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -23,7 +24,8 @@ createRoot(document.getElementById('root')).render(
       {/* <Provider store={Store}> */}
       {/* <IndexManagingComponent/> */}
       <QueryClientProvider client={queryClient}>
-        <TodoApp/>
+        <App/>
+        {/* <TodoApp/> */}
         <ReactQueryDevtools/>
       </QueryClientProvider>
       {/* </Provider> */}

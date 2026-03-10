@@ -1,4 +1,5 @@
 import { useEffect, useReducer, useState } from "react";
+import LoginStatus from "./LoginStatus";
 
 var initialState= {likes :0,dislikes:0};
 
