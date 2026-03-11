@@ -1,4 +1,5 @@
 import React, {useContext, useState} from "react"
+import ContexApp from "./ContexApp";
 
 var userDetailsContext = React.createContext(null);
 
@@ -31,6 +32,8 @@ export default function ContextDemo()
     return(
         <userDetailsContext.Provider value={userDetails}>
         <div className="container-fluid">
+             <ContexApp/>
+             <hr/>
                 <h1>Site Index - {userDetails.UserName}</h1>
                 <dl>
                     <dt>User Name</dt>
@@ -65,6 +68,7 @@ function NavbarComponent() {
             <div className="btn-group">
                 <button className="btn btn-dark">{userdetails.Email}</button>
             </div>
+           
         </div>
     )
 }

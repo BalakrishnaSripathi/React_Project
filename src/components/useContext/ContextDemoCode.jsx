@@ -3,6 +3,23 @@ export default function COntextDemoCode() {
 -Context is memory allocated for component
 -It is made available for component run within the context of parent.
 
+Sharing State
+-------------
+Lift the state up to the closest parent and pass it down as props to child components.
+
+React Context
+-------------
+Allows sharing data without passing it down through many components in the middle.
+
+Create Context
+        |
+Provider Function
+        |
+Custom Component
+        |
+Custom Hook
+
+
 import React, {useContext, useState} from "react"
 
 var userDetailsContext = React.createContext(null);

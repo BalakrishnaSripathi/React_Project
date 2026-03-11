@@ -13,6 +13,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import PostList from './components/reactQuery/PostList.jsx';
 import TodoApp from './components/reactQuery/TodoApp.jsx';
 import Counter from './components/reducer/Counter.jsx';
+import ContexApp from './components/useContext/ContexApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
