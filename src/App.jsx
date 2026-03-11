@@ -78,6 +78,8 @@ import FechApp from './components/connecting-to-the-backend/FechApp.jsx'
 import ReactQueryCode from './components/reactQuery/ReactQueryCode.jsx'
 import TodoList from './components/reactQuery/TodoList.jsx'
 import LoginStatus from './components/useReducer/LoginStatus.jsx'
+import ZustandCode from './components/zustand/ZustandCode.jsx'
+import Login from './components/zustand/LoginZustand.jsx'
 
 
 function App() {
@@ -543,6 +545,19 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <TodoList/>
+                </div>
+            </div> }/>
+
+            
+            <Route path='/Zustand' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ZustandCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <Login/>
                 </div>
             </div> }/>
 

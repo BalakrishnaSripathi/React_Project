@@ -28,7 +28,7 @@ export default function Index() {
       variant="filled"
       severity="success"
     >
-      Today I learned useDeferredValue Hook
+      Today I learned Zustand
     </Alert>
 
     <ArrowDownwardSharpIcon
@@ -156,7 +156,7 @@ export default function Index() {
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/ReactQuery">React Query</Link>
                         </li>
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
-                            <Link className="animate-pulse text-green-600 font-semibold" to="/UseReducer">useReducer</Link>
+                            <Link className="animate-pulse text-green-600 font-semibold" to="/Zustand">Zustand</Link>
                         </li>
                     </ul>
                 </div>
