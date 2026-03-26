@@ -16,6 +16,7 @@ import ContexApp from './components/useContext/ContexApp.jsx';
 import Counter from './components/zustand/Counter.jsx';
 import Login from './components/zustand/LoginZustand.jsx';
 import router from './components/routing/Routes.jsx';
+import PRApp from './components/privateRouting/PRApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -28,7 +29,7 @@ createRoot(document.getElementById('root')).render(
       {/* <IndexManagingComponent/> */}
       <QueryClientProvider client={queryClient}>
 
-        <RouterProvider router={router}/>
+        <PRApp/>
 
         {/* <TodoApp/> */}
         <ReactQueryDevtools/>
