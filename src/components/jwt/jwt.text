@@ -1,0 +1,9 @@
+What is JWT:
+-----------
+JWT (JSON Web Token) is a secure token used to identify a user after login.
+Issued by server after successful login
+Stored on client (temporarily)
+Sent with every protected request
+Proves "who the user is" without re-login
+
+->npm install express body-parser cors jsonwebtoken

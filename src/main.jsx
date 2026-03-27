@@ -17,6 +17,7 @@ import Counter from './components/zustand/Counter.jsx';
 import Login from './components/zustand/LoginZustand.jsx';
 import router from './components/routing/Routes.jsx';
 import PRApp from './components/privateRouting/PRApp.jsx';
+import JwtApp from './components/jwt/JwtApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
       <QueryClientProvider client={queryClient}>
 
         <PRApp/>
+        <JwtApp/>
 
         {/* <TodoApp/> */}
         <ReactQueryDevtools/>
