@@ -19,6 +19,7 @@ import router from './components/routing/Routes.jsx';
 import PRApp from './components/privateRouting/PRApp.jsx';
 import JwtApp from './components/jwt/JwtApp.jsx';
 import SwrApp from './components/swr/SwrApp.jsx';
+import FrontedApp from './components/webSocket/Fronted.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -33,8 +34,8 @@ createRoot(document.getElementById('root')).render(
 
         {/* <PRApp/>
         <JwtApp/> */}
-        <SwrApp/>
-
+        {/* <SwrApp/> */}
+          <FrontedApp/>
         {/* <TodoApp/> */}
         <ReactQueryDevtools/>
       </QueryClientProvider>
