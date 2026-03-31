@@ -21,6 +21,7 @@ import JwtApp from './components/jwt/JwtApp.jsx';
 import SwrApp from './components/swr/SwrApp.jsx';
 import FrontedApp from './components/webSocket/Fronted.jsx';
 import UseDebounceApp from './components/useDebounceHook/UseDebounceApp.jsx';
+import UseLocalStorageApp from './components/useLocalStorageHook/UseLocalStorageApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -39,6 +40,7 @@ createRoot(document.getElementById('root')).render(
           <FrontedApp/>
         {/* <TodoApp/> */}
         <UseDebounceApp/>
+        <UseLocalStorageApp/>
         <ReactQueryDevtools/>
       </QueryClientProvider>
       {/* </Provider> */}
