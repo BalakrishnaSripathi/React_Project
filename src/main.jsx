@@ -22,6 +22,7 @@ import SwrApp from './components/swr/SwrApp.jsx';
 import FrontedApp from './components/webSocket/Fronted.jsx';
 import UseDebounceApp from './components/useDebounceHook/UseDebounceApp.jsx';
 import UseLocalStorageApp from './components/useLocalStorageHook/UseLocalStorageApp.jsx';
+import UploadImage from './components/uploadImgs/UploadImage.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')).render(
         {/* <TodoApp/> */}
         <UseDebounceApp/>
         <UseLocalStorageApp/>
+        <UploadImage/>
         <ReactQueryDevtools/>
       </QueryClientProvider>
       {/* </Provider> */}

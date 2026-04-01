@@ -18,7 +18,7 @@ export default function UseDebounceApp() {
 
   return (
     <div className="p-5">
-      <h2>Debounce Example</h2>
+      <h2>Debounce</h2>
 
       <input
         type="text"

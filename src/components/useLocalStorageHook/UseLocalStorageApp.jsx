@@ -12,7 +12,7 @@ export default function UseLocalStorageApp() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>Simple useLocalStorage Example</h2>
+      <h2>useLocalStorage</h2>
 
       <input
         type="text"
