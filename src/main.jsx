@@ -25,6 +25,8 @@ import UseLocalStorageApp from './components/useLocalStorageHook/UseLocalStorage
 import UploadImage from './components/uploadImgs/UploadImage.jsx';
 import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx';
 import App from './components/useMediaQuery/UseMediaQuery.jsx';
+import ErrorBoundary from './components/useOnlineStatus/ErrorBoundary.jsx';
+import GeolocationDisplay from './components/useGeolocation/GeolocationDisplay.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -40,9 +42,10 @@ createRoot(document.getElementById('root')).render(
         {/* <PRApp/>
         <JwtApp/> */}
         {/* <SwrApp/> */}
-        {/* <StatusComponent/>
+        <StatusComponent/>
+        <GeolocationDisplay/>
 
-          <FrontedApp/> */}
+        { /* <FrontedApp/> */}
         {/* <TodoApp/> */}
       {/* <App/>
       <UseDebounceApp/>
