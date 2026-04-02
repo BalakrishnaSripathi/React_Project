@@ -1,74 +1,48 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from "react";
 
-const UploadImage = () => {
-  const [video, setVideo] = useState(null)
-  const [image,setImage] =useState(null);
+const ImageUpload = () => {
+  const [file, setFile] = useState(null);
+  const [preview, setPreview] = useState(null);
 
   const handleChange = (e) => {
-    const file = e.target.files[0]
-    if (file) {
-      const url = URL.createObjectURL(file)
-      setVideo(url)
-    }
-  }
+    const selectedFile = e.target.files[0];
+    setFile(selectedFile);
 
-  const handleChange1 =(e)=>{
-    const file=e.target.files[0]
-    if (file){
-        const url=URL.createObjectURL(file)
-        setImage(url)
+    if (selectedFile) {
+      setPreview(URL.createObjectURL(selectedFile));
     }
-  }
+  };
 
-  // cleanup (important)
-  useEffect(() => {
-    return () => {
-      if (video) URL.revokeObjectURL(video)
-    }
-  }, [video])
-
+  const handleUpload = async () => {
+    const formData = new FormData();
+    formData.append("profile_img", file);
+    console.log(formData);
+  };
+  
   return (
-    <>
-      <div className="flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-xl">
-        <input
-          type="file"
-          accept="video/mp4"
-          onChange={handleChange}
-          className="text-sm text-gray-500
-                     file:mr-4 file:py-2 file:px-4
-                     file:rounded-lg file:border-0
-                     file:bg-purple-50 file:text-purple-700
-                     hover:file:bg-purple-100"
+    <div className="p-5">
+      
+      {/* Preview */}
+      {preview && (
+        <img
+          src={preview}
+          alt="preview"
+          className="w-32 h-32 object-cover rounded mb-3"
         />
-        <p className="mt-2 text-xs text-gray-400">Upload your video</p>
-      </div>
-      <div className="flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-xl">
-  <input
-    type="file"
-    onChange={handleChange1}
-    className="text-sm text-gray-500
-               file:mr-4 file:py-2 file:px-4
-               file:rounded-lg file:border-0
-               file:bg-purple-50 file:text-purple-700
-               hover:file:bg-purple-100 rounded-xl"
-  />
-  <p className="mt-2 text-xs text-gray-400">Upload your image</p>
-</div>
-    <div className='flex'>
-      {/* show only if video exists */}
-      {video && (
-        <video
-          className="w-96 mt-4 rounded-xl shadow-lg"
-          controls
-        >
-          <source src={video} type="video/mp4" />
-        </video>
       )}
 
-      {image && <img src={image} alt=""  width={200}/>}
-      </div>
-    </>
-  )
-}
+      {/* File Input */}
+      <input type="file" accept="image/*" onChange={handleChange} />
 
-export default UploadImage
+      {/* Upload Button */}
+      <button
+        onClick={handleUpload}
+        className="block mt-3 px-4 py-2 bg-black text-white rounded"
+      >
+        Upload Image
+      </button>
+    </div>
+  );
+};
+
+export default ImageUpload;

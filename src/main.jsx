@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-import App from './App.jsx'
+
 import { BrowserRouter, RouterProvider } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 import { Provider } from 'jotai';
@@ -23,6 +23,8 @@ import FrontedApp from './components/webSocket/Fronted.jsx';
 import UseDebounceApp from './components/useDebounceHook/UseDebounceApp.jsx';
 import UseLocalStorageApp from './components/useLocalStorageHook/UseLocalStorageApp.jsx';
 import UploadImage from './components/uploadImgs/UploadImage.jsx';
+import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx';
+import App from './components/useMediaQuery/UseMediaQuery.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -38,10 +40,13 @@ createRoot(document.getElementById('root')).render(
         {/* <PRApp/>
         <JwtApp/> */}
         {/* <SwrApp/> */}
-          <FrontedApp/>
+        {/* <StatusComponent/>
+
+          <FrontedApp/> */}
         {/* <TodoApp/> */}
-        <UseDebounceApp/>
-        <UseLocalStorageApp/>
+      {/* <App/>
+      <UseDebounceApp/>
+      <UseLocalStorageApp/> */}
         <UploadImage/>
         <ReactQueryDevtools/>
       </QueryClientProvider>
