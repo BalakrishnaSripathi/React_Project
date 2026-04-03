@@ -5,7 +5,7 @@ const GeolocationDisplay = () => {
   // We pass options to get the most precise data possible
   const location = useGeolocation({
     enableHighAccuracy: true,
-    timeout: 10000,
+    // timeout: 10000,
     maximumAge: 0,
   });
 
