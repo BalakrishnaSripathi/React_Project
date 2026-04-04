@@ -27,6 +27,8 @@ import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx';
 import App from './components/useMediaQuery/UseMediaQuery.jsx';
 import GeolocationDisplay from './components/useGeolocation/GeolocationDisplay.jsx';
 import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
+import HeroSection from './components/heroUI/HeroSection';
+import { NextUIProvider } from "@nextui-org/react"
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -43,8 +45,13 @@ createRoot(document.getElementById('root')).render(
         <JwtApp/> */}
         {/* <SwrApp/> */}
         <StatusComponent/>
+        
         {/* <GeolocationDisplay/> */}
         <LocationDetails/>
+          <NextUIProvider>
+          <HeroSection/>
+          </NextUIProvider>
+
 
         { /* <FrontedApp/> */}
         {/* <TodoApp/> */}
