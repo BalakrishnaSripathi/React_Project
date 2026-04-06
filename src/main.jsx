@@ -29,6 +29,7 @@ import GeolocationDisplay from './components/useGeolocation/GeolocationDisplay.j
 import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
 import HeroSection from './components/heroUI/HeroSection';
 import { NextUIProvider } from "@nextui-org/react"
+import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -44,8 +45,9 @@ createRoot(document.getElementById('root')).render(
         {/* <PRApp/>
         <JwtApp/> */}
         {/* <SwrApp/> */}
+     
         <StatusComponent/>
-        
+           <AutoAnimateApp/>
         {/* <GeolocationDisplay/> */}
         <LocationDetails/>
           <NextUIProvider>
