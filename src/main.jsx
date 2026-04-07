@@ -30,6 +30,8 @@ import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
 import HeroSection from './components/heroUI/HeroSection';
 import { NextUIProvider } from "@nextui-org/react"
 import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx';
+import AnimatedLoginCard from './components/useSpring/AnimatedLoginCard.jsx';
+import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -48,7 +50,8 @@ createRoot(document.getElementById('root')).render(
      
         <StatusComponent/>
         {/* <GeolocationDisplay/> */}
-        <App/>
+        <AnimatedLoginCard/>
+        <SpringShowcase/>
         <LocationDetails/>
           <NextUIProvider>
           <HeroSection/>
