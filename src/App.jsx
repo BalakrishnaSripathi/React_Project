@@ -80,6 +80,8 @@ import TodoList from './components/reactQuery/TodoList.jsx'
 import LoginStatus from './components/useReducer/LoginStatus.jsx'
 import ZustandCode from './components/zustand/ZustandCode.jsx'
 import Login from './components/zustand/LoginZustand.jsx'
+import AutoAnimateCode from './components/auto-animate/AutoAnimate.jsx'
+import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx'
 
 
 function App() {
@@ -558,6 +560,20 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <Login/>
+                </div>
+            </div> }/>
+
+
+
+            <Route path='/AutoAnimate' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <AutoAnimateCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <AutoAnimateApp/>
                 </div>
             </div> }/>
 

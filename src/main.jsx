@@ -47,8 +47,8 @@ createRoot(document.getElementById('root')).render(
         {/* <SwrApp/> */}
      
         <StatusComponent/>
-           <AutoAnimateApp/>
         {/* <GeolocationDisplay/> */}
+        <App/>
         <LocationDetails/>
           <NextUIProvider>
           <HeroSection/>
