@@ -156,16 +156,16 @@ export default function Index() {
                             <Link className=" animate-pulse text-green-600 font-semibold " to="/ReactQuery">React Query</Link>
                         </li>
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
-                            <Link className="animate-pulse text-green-600 font-semibold" to="/Zustand">Zustand</Link>
+                            <Link className="animate-pulse text-green-600 font-semibold" to="/StatusComponent">Online Status</Link>
                         </li>
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
                             <Link className="animate-pulse text-green-600 font-semibold" to="/Zustand">Zustand</Link>
                         </li>
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
-                            <Link className="animate-pulse text-green-600 font-semibold" to="/AutoAnimate">Zustand</Link>
+                            <Link className="animate-pulse text-green-600 font-semibold" to="/AutoAnimate">Auto Animate Hook</Link>
                         </li>
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
-                            <Link className="animate-pulse text-green-600 font-semibold" to="/Zustand">Zustand</Link>
+                            <Link className="animate-pulse text-green-600 font-semibold" to="/ImageUpload">ImageUpload</Link>
                         </li>
                     </ul>
                 </div>

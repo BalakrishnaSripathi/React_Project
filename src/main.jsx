@@ -12,7 +12,6 @@ import TodoList from './components/reactQuery/TodoList.jsx';
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import PostList from './components/reactQuery/PostList.jsx';
 import TodoApp from './components/reactQuery/TodoApp.jsx';
-import ContexApp from './components/useContext/ContexApp.jsx';
 import Counter from './components/zustand/Counter.jsx';
 import Login from './components/zustand/LoginZustand.jsx';
 import router from './components/routing/Routes.jsx';
@@ -24,7 +23,7 @@ import UseDebounceApp from './components/useDebounceHook/UseDebounceApp.jsx';
 import UseLocalStorageApp from './components/useLocalStorageHook/UseLocalStorageApp.jsx';
 import UploadImage from './components/uploadImgs/UploadImage.jsx';
 import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx';
-import App from './components/useMediaQuery/UseMediaQuery.jsx';
+//import App from './components/useMediaQuery/UseMediaQuery.jsx';
 import GeolocationDisplay from './components/useGeolocation/GeolocationDisplay.jsx';
 import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
 import HeroSection from './components/heroUI/HeroSection';
@@ -32,6 +31,7 @@ import { NextUIProvider } from "@nextui-org/react"
 import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx';
 import AnimatedLoginCard from './components/useSpring/AnimatedLoginCard.jsx';
 import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
+import App from './App.jsx'
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -47,15 +47,16 @@ createRoot(document.getElementById('root')).render(
         {/* <PRApp/>
         <JwtApp/> */}
         {/* <SwrApp/> */}
-     
-        <StatusComponent/>
+         <BrowserRouter>
+      <App />
+    </BrowserRouter>
         {/* <GeolocationDisplay/> */}
-        <AnimatedLoginCard/>
+        {/* <AnimatedLoginCard/>
         <SpringShowcase/>
         <LocationDetails/>
           <NextUIProvider>
           <HeroSection/>
-          </NextUIProvider>
+          </NextUIProvider> */}
 
 
         { /* <FrontedApp/> */}
@@ -63,7 +64,6 @@ createRoot(document.getElementById('root')).render(
       {/* <App/>
       <UseDebounceApp/>
       <UseLocalStorageApp/> */}
-        <UploadImage/>
         <ReactQueryDevtools/>
       </QueryClientProvider>
       {/* </Provider> */}

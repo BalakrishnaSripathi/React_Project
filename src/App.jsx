@@ -31,8 +31,6 @@ import ClassComponentCode from './components/component/ClassComponentCode'
 import ClassComponent from './components/component/ClassComponent'
 import PropsCode from './components/props/PropsCode'
 import ParentComponent from './components/props/PropsComponent'
-import COntextDemoCode from './components/useContext/ContextDemoCode'
-import ContextDemo from './components/useContext/ContextDemo'
 import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering'
 import ConditionalRenderingCode from './components/ConditionalRendering/ConditionalRenderingCode'
 import UseRefHookCode from './components/useRef/UseRefHookCode'
@@ -49,8 +47,7 @@ import UseCallbackCode from './components/useCallback.jsx/UseCallbackCode'
 import UseCallbackComponent from './components/useCallback.jsx/UseCallbackComponent'
 import HocCode from './components/hoc/HocCode'
 import AuthDashboard from './components/hoc/Dashboard.jsx';
-import ContextAPICode from './components/contextAPI/ContexAPICode.jsx'
-import Home from './components/contextAPI/Home.jsx'
+
 import UseLayoutCode from './components/useLayoutEffect/UseLayoutCode.jsx'
 import UseLayout from './components/useLayoutEffect/UseLayout.jsx'
 import UseDebugCode from './components/useDebugValue/UseDebugCode.jsx'
@@ -82,6 +79,10 @@ import ZustandCode from './components/zustand/ZustandCode.jsx'
 import Login from './components/zustand/LoginZustand.jsx'
 import AutoAnimateCode from './components/auto-animate/AutoAnimate.jsx'
 import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx'
+import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx'
+import OnlineStatusCode from './components/useOnlineStatus/OnlineStatusCode.jsx'
+import UploadImageCode from './components/uploadImgs/UploadImageCode.jsx'
+import ImageUpload from './components/uploadImgs/UploadImage.jsx'
 
 
 function App() {
@@ -178,17 +179,7 @@ function App() {
             </div> }/>
 
 
-            <Route path='/ContextHook' element={
-            <div className="row">
-                <div className="col-md-6 border">
-                    <h5 className="text-center">Code</h5>
-                    <COntextDemoCode/>
-                </div>
-                <div className="col-md-6 border">
-                    <h5 className="text-center">Output</h5>
-                    <ContextDemo/>
-                </div>
-            </div> }/>
+            
 
             <Route path='/UseRef' element={
             <div className="row">
@@ -374,21 +365,6 @@ function App() {
                     <AuthDashboard/>
                 </div>
             </div> }/>
-
-
-            <Route path='/CAPI' element={
-            <div className="row">
-                <div className="col-md-6 border">
-                    <h5 className="text-center">Code</h5>
-                    <ContextAPICode/>
-                </div>
-                <div className="col-md-6 border">
-                    <h5 className="text-center">Output</h5>
-                    <Home/>
-                </div>
-            </div> }/>
-
-
              <Route path='/UseLayout' element={
             <div className="row">
                 <div className="col-md-6 border">
@@ -574,6 +550,33 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <AutoAnimateApp/>
+                </div>
+            </div> }/> 
+
+
+            <Route path='/StatusComponent' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <OnlineStatusCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <StatusComponent/>
+                </div>
+            </div> }/>
+
+
+
+            <Route path='/ImageUpload' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <UploadImageCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <ImageUpload/>
                 </div>
             </div> }/>
 
