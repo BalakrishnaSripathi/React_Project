@@ -83,6 +83,8 @@ import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx'
 import OnlineStatusCode from './components/useOnlineStatus/OnlineStatusCode.jsx'
 import UploadImageCode from './components/uploadImgs/UploadImageCode.jsx'
 import ImageUpload from './components/uploadImgs/UploadImage.jsx'
+import GsapApp from './components/gSAP/GsapApp.jsx'
+import GsapFly from './components/gSAP/GsapFly.jsx'
 
 
 function App() {
@@ -577,6 +579,20 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <ImageUpload/>
+                </div>
+            </div> }/>
+
+
+
+            <Route path='/Gsap' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <GsapApp/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <GsapFly/>
                 </div>
             </div> }/>
 

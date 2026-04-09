@@ -32,9 +32,10 @@ import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx';
 import AnimatedLoginCard from './components/useSpring/AnimatedLoginCard.jsx';
 import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
 import App from './App.jsx'
+import GsapApp from './components/gSAP/GsapApp.jsx';
+import GsapFly from './components/gSAP/GsapFly.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
-
 
 
  
@@ -47,8 +48,9 @@ createRoot(document.getElementById('root')).render(
         {/* <PRApp/>
         <JwtApp/> */}
         {/* <SwrApp/> */}
+
          <BrowserRouter>
-      <App />
+      <App/>
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
         {/* <AnimatedLoginCard/>

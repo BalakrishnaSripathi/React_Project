@@ -167,6 +167,9 @@ export default function Index() {
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
                             <Link className="animate-pulse text-green-600 font-semibold" to="/ImageUpload">ImageUpload</Link>
                         </li>
+                        <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
+                            <Link className="animate-pulse text-green-600 font-semibold" to="/Gsap">GSap</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
