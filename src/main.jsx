@@ -34,6 +34,7 @@ import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
 import App from './App.jsx'
 import GsapApp from './components/gSAP/GsapApp.jsx';
 import GsapFly from './components/gSAP/GsapFly.jsx';
+import ToastApp from './components/hotToast/ToastApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -48,7 +49,6 @@ createRoot(document.getElementById('root')).render(
         {/* <PRApp/>
         <JwtApp/> */}
         {/* <SwrApp/> */}
-
          <BrowserRouter>
       <App/>
     </BrowserRouter>

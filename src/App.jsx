@@ -85,6 +85,8 @@ import UploadImageCode from './components/uploadImgs/UploadImageCode.jsx'
 import ImageUpload from './components/uploadImgs/UploadImage.jsx'
 import GsapApp from './components/gSAP/GsapApp.jsx'
 import GsapFly from './components/gSAP/GsapFly.jsx'
+import ToastCode from './components/hotToast/ToastCode.jsx'
+import ToastApp from './components/hotToast/ToastApp.jsx'
 
 
 function App() {
@@ -593,6 +595,20 @@ function App() {
                 <div className="col-md-6 border">
                     <h5 className="text-center">Output</h5>
                     <GsapFly/>
+                </div>
+            </div> }/>
+
+
+
+            <Route path='/Toast' element={
+            <div className="row">
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Code</h5>
+                    <ToastCode/>
+                </div>
+                <div className="col-md-6 border">
+                    <h5 className="text-center">Output</h5>
+                    <ToastApp/>
                 </div>
             </div> }/>
 
