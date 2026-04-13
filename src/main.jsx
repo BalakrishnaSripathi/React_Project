@@ -35,6 +35,8 @@ import App from './App.jsx'
 import GsapApp from './components/gSAP/GsapApp.jsx';
 import GsapFly from './components/gSAP/GsapFly.jsx';
 import ToastApp from './components/hotToast/ToastApp.jsx';
+import MarkdownApp from './components/markdown/MarkdownApp.jsx';
+import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -46,11 +48,13 @@ createRoot(document.getElementById('root')).render(
       {/* <IndexManagingComponent/> */}
       <QueryClientProvider client={queryClient}>
 
-        {/* <PRApp/>
-        <JwtApp/> */}
+        {/* <PRApp/> */}
+        {/* <JwtApp/>  */}
         {/* <SwrApp/> */}
          <BrowserRouter>
-      <App/>
+          <MarkdownApp/>
+          <FramerMotionApp/>
+      {/* <App/> */}
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
         {/* <AnimatedLoginCard/>

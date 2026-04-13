@@ -153,10 +153,10 @@ export default function Index() {
                             <Link className=" text-decoration-none " to="/BackEnd">Creating a Generic HTTP Service</Link>
                         </li>
                         <li className="list-group-item ">
-                            <Link className=" animate-pulse text-green-600 font-semibold " to="/ReactQuery">React Query</Link>
+                            <Link className="text-decoration-none" to="/ReactQuery">React Query</Link>
                         </li>
-                        <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
-                            <Link className="animate-pulse text-green-600 font-semibold" to="/StatusComponent">Online Status</Link>
+                        <li className="list-group-item">
+                            <Link className="text-decoration-none" to="/StatusComponent">Online Status</Link>
                         </li>
                         <li className="list-group-item"><FiberNewIcon className="text-green-600"/>
                             <Link className="animate-pulse text-green-600 font-semibold" to="/Zustand">Zustand</Link>

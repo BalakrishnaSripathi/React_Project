@@ -12,17 +12,17 @@ app.use(express.urlencoded({ extended: true }))
 const JWT_Token_secret="thisisasecretkeyforsigningtoken"
 
 const portalUsers = {
-    "prasad": {
+    "Prasad": {
         ID: 1,
         name: 'Prasad',
         role: 'faculty',
-        password: 'my@39488'
+        password: 'prasad'
     },
     "Balu": {
         ID: 2,
         name: 'Balu',
         role: 'Student',
-        password: 'bstudent@slksd'
+        password: 'balu'
     }
 }
 
