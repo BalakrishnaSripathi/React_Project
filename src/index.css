@@ -5,3 +5,15 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+@keyframes rain {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.animate-rain {
+  animation: rain linear infinite;
+}

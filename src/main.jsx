@@ -37,6 +37,8 @@ import GsapFly from './components/gSAP/GsapFly.jsx';
 import ToastApp from './components/hotToast/ToastApp.jsx';
 import MarkdownApp from './components/markdown/MarkdownApp.jsx';
 import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
+import ImageUpload from './components/reactDnd/ImageUpload.jsx';
+
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
 
@@ -52,8 +54,9 @@ createRoot(document.getElementById('root')).render(
         {/* <JwtApp/>  */}
         {/* <SwrApp/> */}
          <BrowserRouter>
-          <MarkdownApp/>
-          <FramerMotionApp/>
+          {/* <MarkdownApp/>
+          <FramerMotionApp/> */}
+          <ImageUpload/>
       {/* <App/> */}
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
