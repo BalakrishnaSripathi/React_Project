@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
@@ -38,6 +38,7 @@ import ToastApp from './components/hotToast/ToastApp.jsx';
 import MarkdownApp from './components/markdown/MarkdownApp.jsx';
 import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
 import ImageUpload from './components/reactDnd/ImageUpload.jsx';
+import SuspenseApp from './components/suspense/SuspenseApp.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -56,7 +57,8 @@ createRoot(document.getElementById('root')).render(
          <BrowserRouter>
           {/* <MarkdownApp/>
           <FramerMotionApp/> */}
-          <ImageUpload/>
+          {/* <ImageUpload/> */}
+          <SuspenseApp/>
       {/* <App/> */}
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
