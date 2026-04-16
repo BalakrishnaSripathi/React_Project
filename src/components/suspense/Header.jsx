@@ -8,10 +8,12 @@ const Content = lazy(() =>
 
 export default function Header() {
   return (
-    <div>
-      <h3>Header Loaded ✅</h3>
+    <div className="bg-white text-black rounded-2xl p-5 shadow-md mt-6">
+      
+      <h2 className="text-2xl font-semibold mb-2">📌 Header Section</h2>
+      <p className="text-gray-600">Navigation / User Info</p>
 
-      <Suspense fallback={<p>Loading Content...</p>}>
+      <Suspense fallback={<p className="mt-4">Loading Content...</p>}>
         <Content />
       </Suspense>
     </div>

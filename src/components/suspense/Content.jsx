@@ -8,10 +8,14 @@ const Footer = lazy(() =>
 
 export default function Content() {
   return (
-    <div>
-      <h3>Content Loaded ✅</h3>
+    <div className="bg-blue-100 rounded-2xl p-5 shadow-md mt-6">
+      
+      <h3 className="text-xl font-semibold">📚 Course Content</h3>
+      <p className="text-gray-700 mt-2">
+        React, Java, Full Stack Development
+      </p>
 
-      <Suspense fallback={<p>Loading Footer...</p>}>
+      <Suspense fallback={<p className="mt-4">Loading Footer...</p>}>
         <Footer />
       </Suspense>
     </div>

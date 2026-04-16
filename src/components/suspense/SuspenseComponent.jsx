@@ -8,12 +8,25 @@ const Header = lazy(() =>
 
 export default function SuspenseComponent() {
   return (
-    <div>
-      <h3>Main Loaded ✅</h3>
+    <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6 text-white">
+      
+      {/* Welcome Section */}
+      <div className="text-center bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg">
+        <h1 className="text-4xl font-bold">🎓 Welcome to LMS</h1>
+        <p className="mt-2 text-lg">Learn. Build. Grow 🚀</p>
 
-      <Suspense fallback={<p>Loading Header...</p>}>
-        <Header />
-      </Suspense>
+        <img
+          src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+          className="mx-auto mt-6 rounded-xl w-80 shadow-lg"
+        />
+      </div>
+
+      {/* Header */}
+      <div className="mt-6">
+        <Suspense fallback={<p className="text-center">Loading Header...</p>}>
+          <Header />
+        </Suspense>
+      </div>
     </div>
   );
 }

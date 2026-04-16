@@ -4,8 +4,10 @@ const SuspenseComponent = lazy(() => import("./SuspenseComponent"));
 
 export default function SuspenseApp() {
   return (
-    <Suspense fallback={<p>Loading Main...</p>}>
+    <div className="flex justify-center">
+    <Suspense fallback={<p className="text-red-600">Loading Main...</p>}>
       <SuspenseComponent />
     </Suspense>
+    </div>
   );
 }
