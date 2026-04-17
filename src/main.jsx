@@ -39,6 +39,7 @@ import MarkdownApp from './components/markdown/MarkdownApp.jsx';
 import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
 import ImageUpload from './components/reactDnd/ImageUpload.jsx';
 import SuspenseApp from './components/suspense/SuspenseApp.jsx';
+import AntApp from './components/antDesing/AntApp.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -58,7 +59,8 @@ createRoot(document.getElementById('root')).render(
           {/* <MarkdownApp/>
           <FramerMotionApp/> */}
           {/* <ImageUpload/> */}
-          <SuspenseApp/>
+          {/* <SuspenseApp/> */}
+          <AntApp/>
       {/* <App/> */}
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
