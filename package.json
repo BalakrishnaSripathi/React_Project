@@ -29,6 +29,7 @@
     "body-parser": "^2.2.2",
     "bootstrap": "^5.3.8",
     "cors": "^2.8.6",
+    "embla-carousel-react": "^8.6.0",
     "express": "^5.2.1",
     "formik": "^2.4.9",
     "framer-motion": "^12.38.0",
