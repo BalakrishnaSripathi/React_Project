@@ -40,7 +40,7 @@ import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
 import ImageUpload from './components/reactDnd/ImageUpload.jsx';
 import SuspenseApp from './components/suspense/SuspenseApp.jsx';
 import AntApp from './components/antDesing/AntApp.jsx';
-import Carousel from './components/Carousel/Carousel.jsx';
+import Carousel from './components/useAutoPlay/Carousel.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -61,7 +61,7 @@ createRoot(document.getElementById('root')).render(
           <FramerMotionApp/> */}
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
-          <Carousel/> 
+          <Carousel/>
       {/* <App/> */}
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
