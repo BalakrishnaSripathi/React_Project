@@ -41,6 +41,7 @@ import ImageUpload from './components/reactDnd/ImageUpload.jsx';
 import SuspenseApp from './components/suspense/SuspenseApp.jsx';
 import AntApp from './components/antDesing/AntApp.jsx';
 import Carousel from './components/useAutoPlay/Carousel.jsx';
+import CopyButton from './components/useCopy/CopyButton.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -61,6 +62,7 @@ createRoot(document.getElementById('root')).render(
           <FramerMotionApp/> */}
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
+          <CopyButton/>
           <Carousel/>
       {/* <App/> */}
     </BrowserRouter>
