@@ -42,6 +42,8 @@ import SuspenseApp from './components/suspense/SuspenseApp.jsx';
 import AntApp from './components/antDesing/AntApp.jsx';
 import Carousel from './components/useAutoPlay/Carousel.jsx';
 import CopyButton from './components/useCopy/CopyButton.jsx';
+import { MantineProvider } from '@mantine/core';
+import StudentRegister from './components/mantine/StudentRegister.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -62,6 +64,9 @@ createRoot(document.getElementById('root')).render(
           <FramerMotionApp/> */}
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
+           <MantineProvider withNormalizeCSS withGlobalStyles>
+      <StudentRegister />
+    </MantineProvider>
           <CopyButton/>
           <Carousel/>
       {/* <App/> */}
