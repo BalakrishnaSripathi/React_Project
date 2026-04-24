@@ -28,13 +28,8 @@ import GeolocationDisplay from './components/useGeolocation/GeolocationDisplay.j
 import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
 import HeroSection from './components/heroUI/HeroSection';
 import { NextUIProvider } from "@nextui-org/react"
-import AutoAnimateApp from './components/auto-animate/AutoAnimateApp.jsx';
-import AnimatedLoginCard from './components/useSpring/AnimatedLoginCard.jsx';
 import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
-import App from './App.jsx'
-import GsapApp from './components/gSAP/GsapApp.jsx';
-import GsapFly from './components/gSAP/GsapFly.jsx';
-import ToastApp from './components/hotToast/ToastApp.jsx';
+import App from './App.jsx' 
 import MarkdownApp from './components/markdown/MarkdownApp.jsx';
 import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
 import ImageUpload from './components/reactDnd/ImageUpload.jsx';
@@ -44,6 +39,7 @@ import Carousel from './components/useAutoPlay/Carousel.jsx';
 import CopyButton from './components/useCopy/CopyButton.jsx';
 import { MantineProvider } from '@mantine/core';
 import StudentRegister from './components/mantine/StudentRegister.jsx';
+import AhooksApp from './components/ahooks/AhooksApp.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -65,8 +61,8 @@ createRoot(document.getElementById('root')).render(
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
            <MantineProvider withNormalizeCSS withGlobalStyles>
-      <StudentRegister />
     </MantineProvider>
+    <AhooksApp/>
           <CopyButton/>
           <Carousel/>
       {/* <App/> */}
