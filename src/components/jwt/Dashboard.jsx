@@ -29,7 +29,7 @@ const Dashboard = ({ handleLogout }) => {
     <div>
       <h2>Faculty Dashboard</h2>
 
-      <button onClick={fetchAttendance}>Get Attendance</button>
+      <button className='btn-outline-primary' onClick={fetchAttendance}>Get Attendance</button>
       <button onClick={handleLogout}>Logout</button>
 
       {data && (

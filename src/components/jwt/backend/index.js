@@ -26,6 +26,9 @@ const portalUsers = {
     }
 }
 
+
+
+
 const authenticateFaculty=(req,res,next)=>{
     const bearerToken=req.headers.authorization;
     console.log('Bearer Token from client: ',bearerToken);
