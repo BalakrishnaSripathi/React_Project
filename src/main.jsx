@@ -40,6 +40,10 @@ import CopyButton from './components/useCopy/CopyButton.jsx';
 import { MantineProvider } from '@mantine/core';
 import StudentRegister from './components/mantine/StudentRegister.jsx';
 import AhooksApp from './components/ahooks/AhooksApp.jsx';
+import MyChart from './components/charts/MyChart.jsx';
+import LineGraph from './components/charts/LineGraph.jsx';
+import PieGraph from './components/charts/PieGraph.jsx';
+import ChartApp from './components/charts/ChartApp.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -62,7 +66,9 @@ createRoot(document.getElementById('root')).render(
           {/* <SuspenseApp/> */}
            <MantineProvider withNormalizeCSS withGlobalStyles>
     </MantineProvider>
+    <ChartApp/>
     <AhooksApp/>
+
           <CopyButton/>
           <Carousel/>
       {/* <App/> */}
