@@ -4,6 +4,7 @@ import MyChart from './MyChart'
 import PieGraph from './PieGraph'
 import AreaGraph from './AreaGraph'
 import ScatterGraph from './ScatterGraph'
+import RealTimeScatter from './RealTimeScatter'
 
 const ChartApp = () => {
   return (
@@ -16,6 +17,7 @@ const ChartApp = () => {
       <PieGraph/>
       <AreaGraph/>
       <ScatterGraph/>
+      <RealTimeScatter/>
     </div>
     </>
   )
