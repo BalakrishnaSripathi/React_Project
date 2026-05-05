@@ -38,6 +38,7 @@ import MyChart from './components/charts/MyChart.jsx';
 import LineGraph from './components/charts/LineGraph.jsx';
 import PieGraph from './components/charts/PieGraph.jsx';
 import ChartApp from './components/charts/ChartApp.jsx';
+import DraggableHome from './components/useGesture/DraggableHome.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -54,12 +55,14 @@ createRoot(document.getElementById('root')).render(
         {/* <JwtApp/>  */}
         {/* <SwrApp/> */}
          <BrowserRouter>
+         
           {/* <MarkdownApp/>
           <FramerMotionApp/> */}
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
            <MantineProvider withNormalizeCSS withGlobalStyles>
     </MantineProvider>
+    <DraggableHome/>
     <ChartApp/>
     <AhooksApp/>
 
