@@ -23,7 +23,7 @@ import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx';
 //import HeroSection from './components/heroUI/HeroSection';
 //import { NextUIProvider } from "@nextui-org/react"
 //import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
-//import App from './App.jsx' 
+import App from './App.jsx' 
 //import MarkdownApp from './components/markdown/MarkdownApp.jsx';
 //import FramerMotionApp from './components/framer-motion/FramerMotionApp.jsx';
 //import ImageUpload from './components/reactDnd/ImageUpload.jsx';
@@ -39,6 +39,7 @@ import LineGraph from './components/charts/LineGraph.jsx';
 import PieGraph from './components/charts/PieGraph.jsx';
 import ChartApp from './components/charts/ChartApp.jsx';
 import DraggableHome from './components/useGesture/DraggableHome.jsx';
+import MovableList from './components/react-movable/MovableList.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -56,19 +57,21 @@ createRoot(document.getElementById('root')).render(
         {/* <SwrApp/> */}
          <BrowserRouter>
          
+         
           {/* <MarkdownApp/>
           <FramerMotionApp/> */}
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
            <MantineProvider withNormalizeCSS withGlobalStyles>
     </MantineProvider>
-    <DraggableHome/>
+    {/* <DraggableHome/> */}
+    <MovableList/>
     <ChartApp/>
     <AhooksApp/>
 
           <CopyButton/>
           <Carousel/>
-      {/* <App/> */}
+       <App/> 
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
         {/* <AnimatedLoginCard/>
