@@ -40,6 +40,8 @@ import PieGraph from './components/charts/PieGraph.jsx';
 import ChartApp from './components/charts/ChartApp.jsx';
 import DraggableHome from './components/useGesture/DraggableHome.jsx';
 import MovableList from './components/react-movable/MovableList.jsx';
+import DndKitList from './components/dnd-kit/DndKitList.jsx';
+import HelmetHome from './components/helmet/Helmet.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -65,7 +67,9 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
     </MantineProvider>
     {/* <DraggableHome/> */}
-    <MovableList/>
+    {/* <MovableList/> */}
+    <HelmetHome/>
+    <DndKitList/>
     <ChartApp/>
     <AhooksApp/>
 
