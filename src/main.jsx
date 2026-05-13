@@ -43,7 +43,10 @@ import MovableList from './components/react-movable/MovableList.jsx';
 import DndKitList from './components/dnd-kit/DndKitList.jsx';
 import HelmetHome from './components/helmet/Helmet.jsx';
 import UseDropzone from './components/useDropzone/UseDropzone.jsx';
-import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
+import FadeCard from './components/react-intersection-observer/FadeCard.jsx';
+import Dashboard from './components/SecureLocalStorageHook/Dashboard.jsx';
+import ReactAuthKitFlow from './components/reactAuthKitFlow/ReactAuthKitFlow.jsx';
+//import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -70,7 +73,10 @@ createRoot(document.getElementById('root')).render(
     </MantineProvider>
     {/* <DraggableHome/> */}
     {/* <MovableList/> */}
-    <LazyImage/>
+    {/* <LazyImage/> */}
+    <ReactAuthKitFlow/>
+    <Dashboard/>
+    <FadeCard/>
             <UseDropzone/>
     <HelmetHome/>
     <DndKitList/>

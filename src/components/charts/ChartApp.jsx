@@ -17,7 +17,7 @@ const ChartApp = () => {
       <PieGraph/>
       <AreaGraph/>
       <ScatterGraph/>
-      <RealTimeScatter/>
+      {/* <RealTimeScatter/> */}
     </div>
     </>
   )
