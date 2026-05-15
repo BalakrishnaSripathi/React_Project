@@ -48,6 +48,7 @@ import Dashboard from './components/SecureLocalStorageHook/Dashboard.jsx';
 import ReactAuthKitFlow from './components/reactAuthKitFlow/ReactAuthKitFlow.jsx';
 import Shop from './components/reactUseCart/Shop.jsx';
 import MediaHooksDemo from './components/mediaHooksDemo/MediaHooksDemo.jsx';
+import ReactWaypointDemo from './components/ReactWaypoint/ReactWaypointDemo.jsx';
 //import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
 
 const queryClient=new QueryClient()
@@ -76,6 +77,7 @@ createRoot(document.getElementById('root')).render(
     {/* <DraggableHome/> */}
     {/* <MovableList/> */}
     {/* <LazyImage/> */}
+    <ReactWaypointDemo/>
     <MediaHooksDemo/>
     <ReactAuthKitFlow/>
     <Shop/>
