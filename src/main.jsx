@@ -46,6 +46,8 @@ import UseDropzone from './components/useDropzone/UseDropzone.jsx';
 import FadeCard from './components/react-intersection-observer/FadeCard.jsx';
 import Dashboard from './components/SecureLocalStorageHook/Dashboard.jsx';
 import ReactAuthKitFlow from './components/reactAuthKitFlow/ReactAuthKitFlow.jsx';
+import Shop from './components/reactUseCart/Shop.jsx';
+import MediaHooksDemo from './components/mediaHooksDemo/MediaHooksDemo.jsx';
 //import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
 
 const queryClient=new QueryClient()
@@ -74,10 +76,12 @@ createRoot(document.getElementById('root')).render(
     {/* <DraggableHome/> */}
     {/* <MovableList/> */}
     {/* <LazyImage/> */}
+    <MediaHooksDemo/>
     <ReactAuthKitFlow/>
+    <Shop/>
     <Dashboard/>
     <FadeCard/>
-            <UseDropzone/>
+    <UseDropzone/>
     <HelmetHome/>
     <DndKitList/>
     <ChartApp/>
