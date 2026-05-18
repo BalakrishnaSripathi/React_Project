@@ -50,6 +50,7 @@ import MediaHooksDemo from './components/mediaHooksDemo/MediaHooksDemo.jsx';
 import ReactWaypointDemo from './components/ReactWaypoint/ReactWaypointDemo.jsx';
 //import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
 import SwiperApp from './components/swiper/SwiperApp.jsx';
+import UseHookApp from './components/usehooks-ts/UseHookApp.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -80,6 +81,7 @@ createRoot(document.getElementById('root')).render(
     {/* <ReactWaypointDemo/>
     <MediaHooksDemo/> */}
     <SwiperApp/>
+    <UseHookApp/>
     <ReactAuthKitFlow/>
     <Shop/>
     <Dashboard/>
