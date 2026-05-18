@@ -2,7 +2,6 @@ import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-
 import { BrowserRouter, RouterProvider } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 import { Provider } from 'jotai';
@@ -19,7 +18,7 @@ import UseLocalStorageApp from './components/useLocalStorageHook/UseLocalStorage
 import StatusComponent from './components/useOnlineStatus/StatusComponent.jsx';
 //import App from './components/useMediaQuery/UseMediaQuery.jsx';
 //import GeolocationDisplay from './components/useGeolocation/GeolocationDisplay.jsx';
-//import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
+import LocationDetails from './components/useGeolocation/LocationDetails.jsx';
 //import HeroSection from './components/heroUI/HeroSection';
 //import { NextUIProvider } from "@nextui-org/react"
 //import SpringShowcase from './components/useSpring/SpringShowcase.jsx';
@@ -50,6 +49,7 @@ import Shop from './components/reactUseCart/Shop.jsx';
 import MediaHooksDemo from './components/mediaHooksDemo/MediaHooksDemo.jsx';
 import ReactWaypointDemo from './components/ReactWaypoint/ReactWaypointDemo.jsx';
 //import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
+import SwiperApp from './components/swiper/SwiperApp.jsx';
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -77,8 +77,9 @@ createRoot(document.getElementById('root')).render(
     {/* <DraggableHome/> */}
     {/* <MovableList/> */}
     {/* <LazyImage/> */}
-    <ReactWaypointDemo/>
-    <MediaHooksDemo/>
+    {/* <ReactWaypointDemo/>
+    <MediaHooksDemo/> */}
+    <SwiperApp/>
     <ReactAuthKitFlow/>
     <Shop/>
     <Dashboard/>
@@ -91,6 +92,8 @@ createRoot(document.getElementById('root')).render(
 
           <CopyButton/>
           <Carousel/>
+           <LocationDetails/>
+               <UseLocalStorageApp/> 
        <App/> 
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
