@@ -51,6 +51,15 @@ import ReactWaypointDemo from './components/ReactWaypoint/ReactWaypointDemo.jsx'
 //import LazyImage from './components/react-intersection-observer/LazyImage.jsx';
 import SwiperApp from './components/swiper/SwiperApp.jsx';
 import UseHookApp from './components/usehooks-ts/UseHookApp.jsx';
+import DocumentUpload from './components/fileUpload/DocumentUpload .jsx';
+import DocumentList from './components/fileUpload/DocumentList.jsx';
+import QRCodeGenerator from './components/qRCodeGenerator/QRCodeGenerator.jsx';
+import QRCodeExample from './components/react-oauth-google/QRCodeExample.jsx';
+import SweetalertApp from './components/sweetalert2/sweetalert.jsx';
+import SkeletonApp from './components/loading-skeleton/SkeletonApp.jsx';
+import AosApp from './components/aos/AosApp.jsx';
+import SonnerApp from './components/sonner/SonnerApp.jsx';
+
 
 const queryClient=new QueryClient()
 createRoot(document.getElementById('root')).render(
@@ -74,9 +83,20 @@ createRoot(document.getElementById('root')).render(
           {/* <ImageUpload/> */}
           {/* <SuspenseApp/> */}
            <MantineProvider withNormalizeCSS withGlobalStyles>
+
     </MantineProvider>
-    {/* <DraggableHome/> */}
-    {/* <MovableList/> */}
+    <SonnerApp/>
+    <AosApp/>
+    <SkeletonApp/>
+    <SweetalertApp/>
+
+    <QRCodeExample/>
+
+       
+    <DocumentUpload/>
+    <DocumentList/>
+     {/* <DraggableHome/>  */}
+    <MovableList/> 
     {/* <LazyImage/> */}
     {/* <ReactWaypointDemo/>
     <MediaHooksDemo/> */}
