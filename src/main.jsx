@@ -62,6 +62,13 @@ import SonnerApp from './components/sonner/SonnerApp.jsx';
 import ModalApp from './components/react-modal/ModalApp.jsx';
 import ConfettiApp from './components/react-confetti/ConfettiApp.jsx';
 import StrapiApp from './components/strapi/StrapiApp.jsx';
+import QuillEditor from './components/react-quill/QuillEditorApp.jsx';
+import PlayerApp from './components/react-player/PlayerApp.jsx';
+import DeviceInfo from './components/react-device-detect/DeviceInfo.jsx';
+import SpeechApp from './components/react-speech-recognition/speech.jsx';
+import HotkeysApp from './components/react-hotkeys-hook/HotkeysApp.jsx';
+import MapApp from './components/react-leaflet/MapApp.jsx';
+import TypeAnimationApp from './components/react-type-animation/TypeAnimationApp';
 
 
 const queryClient=new QueryClient()
@@ -88,6 +95,13 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <TypeAnimationApp/>
+    <MapApp/>
+    <HotkeysApp/>
+    <SpeechApp/>
+    <DeviceInfo/>
+    <PlayerApp/>
+    <QuillEditor/>
     <StrapiApp/>
     <ConfettiApp/>
     <ModalApp/>

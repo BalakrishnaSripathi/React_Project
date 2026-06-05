@@ -1,140 +1,120 @@
+import { useState } from "react";
 import {
   MapContainer,
   TileLayer,
-  Marker,
-  Popup,
-  Polyline,
 } from "react-leaflet";
 
 import L from "leaflet";
-
 import "leaflet/dist/leaflet.css";
 
-import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import RoutingMachine from "./RoutingMachine";
 
-// Fix marker icons in Vite
-delete L.Icon.Default.prototype._getIconUrl;
+export default function MapApp() {
+  const [restaurant, setRestaurant] = useState("");
+  const [customer, setCustomer] = useState("");
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
+  const [route, setRoute] = useState(null);
 
-function MapApp() {
-  const restaurant = [17.385, 78.4867];
+  const handleTrack = async () => {
+    try {
+      const restaurantRes = await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${restaurant}`
+      );
 
-  const deliveryBoy = [17.395, 78.4967];
+      const restaurantData = await restaurantRes.json();
 
-  const customer = [17.405, 78.5067];
+      const customerRes = await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${customer}`
+      );
+
+      const customerData = await customerRes.json();
+
+      if (
+        restaurantData.length &&
+        customerData.length
+      ) {
+        setRoute({
+          start: [
+            parseFloat(restaurantData[0].lat),
+            parseFloat(restaurantData[0].lon),
+          ],
+          end: [
+            parseFloat(customerData[0].lat),
+            parseFloat(customerData[0].lon),
+          ],
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
         <h1 className="text-4xl font-bold text-center mb-8">
-          Food Delivery Tracking App
+          Food Delivery Route Tracker
         </h1>
 
-        {/* Order Cards */}
-        <div className="grid md:grid-cols-3 gap-5 mb-8">
+        <div className="bg-white p-6 rounded-xl shadow mb-6">
 
-          <div className="bg-white rounded-xl shadow p-5">
-            <h2 className="font-bold text-xl mb-2">
-              🍽 Restaurant
-            </h2>
+          <div className="grid md:grid-cols-2 gap-4">
 
-            <p>Biryani House</p>
+            <input
+              type="text"
+              placeholder="Restaurant Address"
+              value={restaurant}
+              onChange={(e) =>
+                setRestaurant(e.target.value)
+              }
+              className="border p-3 rounded-lg"
+            />
 
-            <p className="text-green-600 mt-2">
-              Preparing Order
-            </p>
+            <input
+              type="text"
+              placeholder="Customer Address"
+              value={customer}
+              onChange={(e) =>
+                setCustomer(e.target.value)
+              }
+              className="border p-3 rounded-lg"
+            />
+
           </div>
 
-          <div className="bg-white rounded-xl shadow p-5">
-            <h2 className="font-bold text-xl mb-2">
-              🛵 Delivery Partner
-            </h2>
-
-            <p>Rahul Kumar</p>
-
-            <p className="text-blue-600 mt-2">
-              On The Way
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl shadow p-5">
-            <h2 className="font-bold text-xl mb-2">
-              🏠 Customer
-            </h2>
-
-            <p>Balakrishna</p>
-
-            <p className="text-purple-600 mt-2">
-              Waiting For Delivery
-            </p>
-          </div>
-
-        </div>
-
-        {/* Map */}
-        <div className="bg-white rounded-xl shadow overflow-hidden">
-
-          <MapContainer
-            center={restaurant}
-            zoom={13}
-            scrollWheelZoom={true}
-            style={{
-              height: "600px",
-              width: "100%",
-            }}
+          <button
+            onClick={handleTrack}
+            className="mt-4 bg-green-600 text-white px-6 py-3 rounded-lg"
           >
-            <TileLayer
-              attribution="&copy; OpenStreetMap contributors"
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-
-            {/* Restaurant Marker */}
-            <Marker position={restaurant}>
-              <Popup>
-                🍽 Biryani House
-              </Popup>
-            </Marker>
-
-            {/* Delivery Marker */}
-            <Marker position={deliveryBoy}>
-              <Popup>
-                🛵 Rahul Kumar
-              </Popup>
-            </Marker>
-
-            {/* Customer Marker */}
-            <Marker position={customer}>
-              <Popup>
-                🏠 Customer Location
-              </Popup>
-            </Marker>
-
-            {/* Delivery Route */}
-            <Polyline
-              positions={[
-                restaurant,
-                deliveryBoy,
-                customer,
-              ]}
-            />
-
-          </MapContainer>
+            Show Optimal Route
+          </button>
 
         </div>
+
+        <MapContainer
+          center={[17.385, 78.4867]}
+          zoom={12}
+          style={{
+            height: "600px",
+            width: "100%",
+          }}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+
+          {route && (
+            <RoutingMachine
+              start={route.start}
+              end={route.end}
+            />
+          )}
+        </MapContainer>
 
       </div>
 
     </div>
   );
 }
-
-export default MapApp;
