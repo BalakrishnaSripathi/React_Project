@@ -70,6 +70,8 @@ import HotkeysApp from './components/react-hotkeys-hook/HotkeysApp.jsx';
 import MapApp from './components/react-leaflet/MapApp.jsx';
 import TypeAnimationApp from './components/react-type-animation/TypeAnimationApp';
 import ParallaxApp from './components/react-parallax/ParallaxApp.jsx';
+import EmojiPickerApp from './components/emoji-picker-react/EmojiPickerApp';
+
 
 
 const queryClient=new QueryClient()
@@ -96,6 +98,7 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <EmojiPickerApp/>
     <ParallaxApp/>
     <TypeAnimationApp/>
     <MapApp/>
