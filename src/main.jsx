@@ -71,6 +71,7 @@ import MapApp from './components/react-leaflet/MapApp.jsx';
 import TypeAnimationApp from './components/react-type-animation/TypeAnimationApp';
 import ParallaxApp from './components/react-parallax/ParallaxApp.jsx';
 import EmojiPickerApp from './components/emoji-picker-react/EmojiPickerApp';
+import ReactEasyCropApp from './components/react-easy-crop/ReactEasyCrop.jsx';
 
 
 
@@ -98,6 +99,7 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <ReactEasyCropApp/>
     <EmojiPickerApp/>
     <ParallaxApp/>
     <TypeAnimationApp/>
