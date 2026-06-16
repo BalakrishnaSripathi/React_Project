@@ -73,6 +73,7 @@ import ParallaxApp from './components/react-parallax/ParallaxApp.jsx';
 import EmojiPickerApp from './components/emoji-picker-react/EmojiPickerApp';
 import ReactEasyCropApp from './components/react-easy-crop/ReactEasyCrop.jsx';
 import ShareApp from './components/react-share/ShareApp.jsx';
+import ReactratingApp from './components/react-rating/ReactratingApp.jsx';
 
 
 
@@ -100,6 +101,7 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <ReactratingApp/>
     <ShareApp/>
     <ReactEasyCropApp/>
     <EmojiPickerApp/>
