@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 
 function ReactratingApp() {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(2);
 
   const ratingChanged = (newRating) => {
     setRating(newRating);

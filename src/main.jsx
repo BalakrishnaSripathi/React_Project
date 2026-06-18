@@ -74,6 +74,7 @@ import EmojiPickerApp from './components/emoji-picker-react/EmojiPickerApp';
 import ReactEasyCropApp from './components/react-easy-crop/ReactEasyCrop.jsx';
 import ShareApp from './components/react-share/ShareApp.jsx';
 import ReactratingApp from './components/react-rating/ReactratingApp.jsx';
+import ColorApp from './components/react-color/ColorApp.jsx';
 
 
 
@@ -102,6 +103,7 @@ createRoot(document.getElementById('root')).render(
 
     </MantineProvider>
     <ReactratingApp/>
+    <ColorApp/>
     <ShareApp/>
     <ReactEasyCropApp/>
     <EmojiPickerApp/>
