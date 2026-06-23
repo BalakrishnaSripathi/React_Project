@@ -75,6 +75,7 @@ import ReactEasyCropApp from './components/react-easy-crop/ReactEasyCrop.jsx';
 import ShareApp from './components/react-share/ShareApp.jsx';
 import ReactratingApp from './components/react-rating/ReactratingApp.jsx';
 import ColorApp from './components/react-color/ColorApp.jsx';
+import ReactSlickApp from './components/react-slick/ReactSlickApp.jsx';
 
 
 
@@ -102,6 +103,7 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <ReactSlickApp/>
     <ReactratingApp/>
     <ColorApp/>
     <ShareApp/>
