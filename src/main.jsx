@@ -76,6 +76,7 @@ import ShareApp from './components/react-share/ShareApp.jsx';
 import ReactratingApp from './components/react-rating/ReactratingApp.jsx';
 import ColorApp from './components/react-color/ColorApp.jsx';
 import ReactSlickApp from './components/react-slick/ReactSlickApp.jsx';
+import ReactJoyrideApp from './components/react-joyride/ReactJoyrideApp.jsx';
 
 
 
@@ -103,6 +104,7 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <ReactJoyrideApp/>
     <ReactSlickApp/>
     <ReactratingApp/>
     <ColorApp/>
