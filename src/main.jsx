@@ -77,6 +77,7 @@ import ReactratingApp from './components/react-rating/ReactratingApp.jsx';
 import ColorApp from './components/react-color/ColorApp.jsx';
 import ReactSlickApp from './components/react-slick/ReactSlickApp.jsx';
 import ReactJoyrideApp from './components/react-joyride/ReactJoyrideApp.jsx';
+import PdfViewerApp from './components/PDFViewer/PdfViewerApp.jsx';
 
 
 
@@ -154,6 +155,7 @@ createRoot(document.getElementById('root')).render(
            <LocationDetails/>
                <UseLocalStorageApp/> 
        <App/> 
+        <PdfViewerApp/>
     </BrowserRouter>
         {/* <GeolocationDisplay/> */}
         {/* <AnimatedLoginCard/>
