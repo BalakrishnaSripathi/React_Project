@@ -78,6 +78,7 @@ import ColorApp from './components/react-color/ColorApp.jsx';
 import ReactSlickApp from './components/react-slick/ReactSlickApp.jsx';
 import ReactJoyrideApp from './components/react-joyride/ReactJoyrideApp.jsx';
 import PdfViewerApp from './components/PDFViewer/PdfViewerApp.jsx';
+import ReactMultiCarouselApp from './components/react-multi-carousel/ReactMultiCarouselApp';
 
 
 
@@ -105,6 +106,7 @@ createRoot(document.getElementById('root')).render(
            <MantineProvider withNormalizeCSS withGlobalStyles>
 
     </MantineProvider>
+    <ReactMultiCarouselApp/>
     <ReactJoyrideApp/>
     <ReactSlickApp/>
     <ReactratingApp/>
