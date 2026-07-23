@@ -47,6 +47,7 @@ import ReactSlickApp from './components/react-slick/ReactSlickApp.jsx';
 import ReactJoyrideApp from './components/react-joyride/ReactJoyrideApp.jsx';
 import PdfViewerApp from './components/PDFViewer/PdfViewerApp.jsx';
 import ReactMultiCarouselApp from './components/react-multi-carousel/ReactMultiCarouselApp.jsx';
+import DOMPresentation from './components/presentation/DOM.jsx';
 
 // NOTE: FormPage and Home are route-level page components, not "library demo"
 // components, so they're defined in Index.jsx and imported here as elements
@@ -114,6 +115,8 @@ export function buildRegistry({ FormPage, Home }) {
     { id: 'ahooks', name: 'Alibaba Production Ahooks', element: <AhooksApp />, category: 'Utility Hooks' },
     { id: 'helmet', name: 'SEO Document Head Control', element: <HelmetHome />, category: 'Utility Hooks' },
     { id: 'share', name: 'Social Share Portal', element: <ShareApp />, category: 'Utility Hooks' },
+    { id: 'DOM', name: 'Document Object Model', element: <DOMPresentation />, category: 'Utility Hooks' },
+
 
     // --- App root ---
     { id: 'main-app', name: 'Main Core App Context', element: <App />, category: 'App Root' },
