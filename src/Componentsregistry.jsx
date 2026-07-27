@@ -48,6 +48,7 @@ import ReactJoyrideApp from './components/react-joyride/ReactJoyrideApp.jsx';
 import PdfViewerApp from './components/PDFViewer/PdfViewerApp.jsx';
 import ReactMultiCarouselApp from './components/react-multi-carousel/ReactMultiCarouselApp.jsx';
 import DOMPresentation from './components/presentation/DOM.jsx';
+import BatteryStatusWidget from './components/useBattery/UseBattery.jsx';
 
 // NOTE: FormPage and Home are route-level page components, not "library demo"
 // components, so they're defined in Index.jsx and imported here as elements
@@ -116,6 +117,8 @@ export function buildRegistry({ FormPage, Home }) {
     { id: 'helmet', name: 'SEO Document Head Control', element: <HelmetHome />, category: 'Utility Hooks' },
     { id: 'share', name: 'Social Share Portal', element: <ShareApp />, category: 'Utility Hooks' },
     { id: 'DOM', name: 'Document Object Model', element: <DOMPresentation />, category: 'Utility Hooks' },
+    { id: 'useBattery', name: 'useBattery Hook', element: <BatteryStatusWidget/>, category: 'Utility Hooks' },
+
 
 
     // --- App root ---
