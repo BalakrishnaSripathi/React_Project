@@ -52,6 +52,8 @@ import BatteryStatusWidget from './components/useBattery/UseBattery.jsx';
 import CalendarApp from './components/calendar/Calendar.jsx';
 import FunSwitch from './components/fun/Fun.jsx';
 import PremiumCeilingFanApp from './components/fun/Fun.jsx';
+import MotionShowcase from './components/motionShowAnnimations/MotionShowcase.jsx';
+import FunButton from './components/fun/Fun.jsx';
 
 // NOTE: FormPage and Home are route-level page components, not "library demo"
 // components, so they're defined in Index.jsx and imported here as elements
@@ -122,8 +124,8 @@ export function buildRegistry({ FormPage, Home }) {
     { id: 'DOM', name: 'Document Object Model', element: <DOMPresentation />, category: 'Utility Hooks' },
     { id: 'useBattery', name: 'useBattery Hook', element: <BatteryStatusWidget/>, category: 'Utility Hooks' },
     { id: 'Calendar', name: 'Calendar', element: <CalendarApp/>, category: 'Utility Hooks' },
-    { id: 'fun', name: 'Fun', element: <PremiumCeilingFanApp/>, category: 'Utility Hooks' },
-
+    { id: 'fun', name: 'Fun', element: <FunButton/>, category: 'Utility Hooks' },
+    { id: 'motion', name: 'MotionShowcase', element: <MotionShowcase/>, category: 'Utility Hooks' },
 
 
     // --- App root ---
